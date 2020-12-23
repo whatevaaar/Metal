@@ -1,0 +1,42 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"19357ac2-2fee-496c-998b-88677fa32fc3\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/job_list.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/job_list.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1lGkIEOGDNF9ztJgF5erCNTHyv2\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"19357ac2-2fee-496c-998b-88677fa32fc3\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1607230733714</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1607230733714</updated>\r\n      <workItem from=\"1607230734807\" duration=\"3770000\" />\r\n      <workItem from=\"1607273530727\" duration=\"50000\" />\r\n      <workItem from=\"1607376080195\" duration=\"3933000\" />\r\n      <workItem from=\"1607381876746\" duration=\"3139000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"740\" y=\"295\" key=\"FileChooserDialogImpl\" timestamp=\"1607273578253\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\r\n    </state>\r\n    <state x=\"740\" y=\"295\" key=\"FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1607273578253\" />\r\n    <state x=\"623\" y=\"235\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1607382238460\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\r\n    </state>\r\n    <state x=\"623\" y=\"235\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1607382238460\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision cfca9ee7244a95ad62f2b95d965c14af96b0cfec)
++++ .idea/workspace.xml	(date 1608591935485)
+@@ -3,8 +3,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/job_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_list.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,7 +34,9 @@
+       <workItem from="1607230734807" duration="3770000" />
+       <workItem from="1607273530727" duration="50000" />
+       <workItem from="1607376080195" duration="3933000" />
+-      <workItem from="1607381876746" duration="3139000" />
++      <workItem from="1607381876746" duration="3737000" />
++      <workItem from="1607804852266" duration="609000" />
++      <workItem from="1608568333572" duration="663000" />
+     </task>
+     <servers />
+   </component>
+@@ -44,10 +44,10 @@
+     <option name="version" value="3" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1607273578253">
++    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1607807211529">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>
+-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607273578253" />
++    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607807211529" />
+     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1607382238460">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>

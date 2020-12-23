@@ -4355,7 +4355,6 @@ footer.style3 span, footer.style3 a {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
     content: "";
     z-index: -1;
@@ -4374,7 +4373,6 @@ footer.style3 span, footer.style3 a {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
     content: "";
     background-image: url('../images/lines.png');
@@ -11604,7 +11602,7 @@ footer.ft .scrollup {
 
 }
 
-.new-slide img{ position: absolute; bottom: 0px; right: 0px; opacity: 0.20;}
+.new-slide img{ width: 100%}
 
 
 

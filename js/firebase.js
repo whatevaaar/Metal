@@ -33,47 +33,8 @@ function crearCuenta() {
         });
 }
 
-function guardarPerfil() {
+function comprobarUsuarioEstaLogeado(){
     if (!user)
         window.location.href = "signup.html";
-    let nombre = document.getElementById("input-nombre").value;
-    let email = document.getElementById("input-email").value;
-    let numeroTelefonico = document.getElementById("input-numero-telefonico").value;
-    let facebook = document.getElementById("input-facebook").value;
-    let twitter = document.getElementById("input-twitter").value;
-    let linkedin = document.getElementById("input-linkedin").value;
-    let direccion = generarDireccion();
-    firebase.database().ref('candidatos/' + user.uid).set({
-        nombre: nombre,
-        email: email,
-        direccion: direccion,
-        numeroTelefonico: numeroTelefonico,
-        facebook: facebook,
-        twitter: twitter,
-        linkedin: linkedin
-    }, (error) => {
-        if (error) {
-            alert(error);
-        } else {
-            firebase.auth().currentUser.updateProfile({
-                displayName: nombre,
-                photoURL: ""
-            }).then(function() {
-                window.location.href = "mycv.html"
-                // Update successful.
-            }).catch(function(error) {
-                alert(error);
-                // An error happened.
-            });
-        }
-    });
 }
 
-function generarDireccion() {
-    let municipio = document.getElementById("input-municipio").value;
-    let colonia = document.getElementById("input-colonia").value;
-    let numeroDeCalle = document.getElementById("input-numero-calle").value;
-    let calle = document.getElementById("input-calle").value;
-    let cp = document.getElementById("input-cp").value;
-   return municipio + ',' + colonia + ',CP: ' + cp + ', ' + calle + ',' + numeroDeCalle;
-}

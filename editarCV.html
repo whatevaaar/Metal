@@ -47,7 +47,7 @@
             <div class="btn-extars">
                 <a href="#" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                 <ul class="account-btns">
-                    <li class="signup-popup"><a title=""><i class="fas fa-key"></i> Sign Up</a></li>
+                    <li class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
                     <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
                 </ul>
             </div><!-- Btn Extras -->
@@ -83,7 +83,7 @@
                 <div class="btn-extars">
                     <a href="#" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                     <ul class="account-btns">
-                        <li class="signup-popup"><a title=""><i class="fas fa-key"></i> Sign Up</a></li>
+                        <li class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
                         <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
                     </ul>
                 </div><!-- Btn Extras -->
@@ -131,8 +131,8 @@
                         <div class="widget">
                             <div class="tree_widget-sec">
                                 <ul>
-                                    <li><a href="candidates_profile.html" title=""><i class="fas fa-file-text"></i>Mi Perfil</a></li>
-                                    <li><a href="candidates_my_resume.html" title=""><i class="fas fa-briefcase"></i>Mi CV</a></li>
+                                    <li><a href="perfil.html" title=""><i class="fas fa-file-text"></i>Mi Perfil</a></li>
+                                    <li><a href="mycv.html" title=""><i class="fas fa-briefcase"></i>Mi CV</a></li>
                                     <li><a href="#" title=""><i class="fas fa-unlink"></i>Logout</a></li>
                                 </ul>
                             </div>
@@ -147,35 +147,35 @@
                                         <div class="col-lg-12">
                                             <span class="pf-title">Título</span>
                                             <div class="pf-field">
-                                                <input placeholder="" type="text">
+                                                <input placeholder="" id="input-titulo-educacion" type="text">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <span class="pf-title">De</span>
                                             <div class="pf-field">
-                                                <input placeholder="06.11.2007" type="text" class="form-control datepicker">
+                                                <input placeholder="06.11.2007" id="fecha-inicio-educacion" type="date" class="form-control datepicker">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <span class="pf-title">A</span>
                                             <div class="pf-field">
-                                                <input placeholder="06.11.2012" type="text" class="form-control datepicker">
+                                                <input placeholder="06.11.2012" id="fecha-fin-educacion" type="date" class="form-control datepicker">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <span class="pf-title">Instituto</span>
                                             <div class="pf-field">
-                                                <input type="text">
+                                                <input id="input-instituto" type="text">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <span class="pf-title">Descripción</span>
                                             <div class="pf-field">
-                                                <textarea></textarea>
+                                                <textarea id="input-descripcion-educacion"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <button type="submit">Agregar</button>
+                                            <button onclick="agregarEducacion()">Agregar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -185,40 +185,40 @@
                                         <div class="col-lg-12">
                                             <span class="pf-title">Título</span>
                                             <div class="pf-field">
-                                                <input placeholder="Tooms.." type="text">
+                                                <input placeholder="" id="input-titulo-experiencia" type="text">
                                             </div>
                                         </div>
                                         <div class="col-lg-5">
                                             <span class="pf-title">De</span>
                                             <div class="pf-field">
-                                                <input placeholder="06.11.2007" type="text" class="form-control datepicker">
+                                                <input id="fecha-inicio-experiencia" placeholder="06.11.2007" type="date" class="form-control datepicker">
                                             </div>
                                         </div>
                                         <div class="col-lg-5">
                                             <span class="pf-title">A</span>
                                             <div class="pf-field">
-                                                <input placeholder="06.11.2012" type="text" class="form-control datepicker">
+                                                <input id="fecha-fin-experiencia" placeholder="06.11.2012" type="date" class="form-control datepicker">
                                             </div>
                                         </div>
                                         <div class="col-lg-2">
                                             <p class="remember-label">
-                                                <input type="checkbox" name="cb" id="fgfg"><label for="fgfg">Presente</label>
+                                                <input id="input-presente" type="checkbox" name="cb" id="fgfg"><label for="fgfg">Presente</label>
                                             </p>
                                         </div>
                                         <div class="col-lg-12">
                                             <span class="pf-title">Compañía</span>
                                             <div class="pf-field">
-                                                <input type="text">
+                                                <input type="text" id="input-compania">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <span class="pf-title">Descripción</span>
                                             <div class="pf-field">
-                                                <textarea></textarea>
+                                                <textarea id="input-descripcion-experiencia"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <button type="submit">Agregar</button>
+                                            <button onclick="agregarExperiencia()">Agregar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -228,17 +228,17 @@
                                         <div class="col-lg-7">
                                             <span class="pf-title">Skill</span>
                                             <div class="pf-field">
-                                                <input placeholder="" type="text">
+                                                <input placeholder="" id="input-skill" type="text">
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <span class="pf-title">Porcentaje</span>
                                             <div class="pf-field">
-                                                <input placeholder="" type="text">
+                                                <input placeholder="" id="input-porcentaje-skill" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0">
                                             </div>
                                         </div>
                                         <div class="col-lg-2">
-                                            <button type="submit">Agregar</button>
+                                            <button onclick="agregarSkill()">Agregar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -248,17 +248,17 @@
                                         <div class="col-lg-7">
                                             <span class="pf-title">Hablado</span>
                                             <div class="pf-field">
-                                                <input id="ex6" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+                                                <input id="input-ingles-hablado" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <span class="pf-title">Escrito</span>
                                             <div class="pf-field">
-                                                <input id="ex7" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+                                                <input id="input-ingles-escrito" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-2">
-                                            <button type="submit">Agregar</button>
+                                            <button onclick="actualizarIngles()">Actualizar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -266,6 +266,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg">
+                <button onclick="window.location='perfil.html'">Finalizar</button>
             </div>
         </div>
     </section>
@@ -280,7 +283,9 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 <script src="js/firebase.js" type="text/javascript"></script>
+<script src="js/editarCV.js" type="text/javascript"></script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
 <script src="js/modernizr.js" type="text/javascript"></script>
@@ -302,8 +307,9 @@
             format: 'mm-dd-yyyy'
         });
     });
-    $("#ex6").slider();
-    $("#ex7").slider();
+    $("#input-ingles-escrito").slider();
+    $("#input-ingles-hablado").slider();
+    $("#input-porcentaje-skill").slider();
 </script>
 
 </body>
