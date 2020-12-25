@@ -1,15 +1,15 @@
 firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
+    if (user)
         cargarDatosDeUsuario(user);
-    } else {
-
-    }
+    else
+        window.location.href = "signup.html";
 });
+
 function crearApartadoSkills(childData) {
     let seccion = document.getElementById("seccion-skills");
     let divProgress = document.createElement('div');
     let divBar = document.createElement('div');
-    let div= document.createElement('div');
+    let div = document.createElement('div');
     let spanSkill = document.createElement('span');
     let spanPorcentaje = document.createElement('span');
 
@@ -26,6 +26,7 @@ function crearApartadoSkills(childData) {
     divBar.appendChild(div);
     div.appendChild(spanPorcentaje);
 }
+
 function crearApartadoExperiencia(childData) {
     let seccion = document.getElementById("seccion-experiencia");
     let divHistoria = document.createElement('div');
@@ -40,7 +41,7 @@ function crearApartadoExperiencia(childData) {
     divHistoria.classList.add("style2");
     divInfo.classList.add("edu-hisinfo");
     headerTitulo.innerText = childData.titulo;
-    iconoFecha.innerText = childData.fechaInicio.substring(0,4) + ' - ' + childData.fechaFin.substring(0,4);
+    iconoFecha.innerText = childData.fechaInicio.substring(0, 4) + ' - ' + childData.fechaFin.substring(0, 4);
     spanEmpresa.innerText = childData.empresa;
     descripcion.innerText = childData.descripcion;
 
@@ -68,7 +69,7 @@ function crearApartadoEducacion(childData) {
     iconoCap.classList.add("fa-graduation-cap");
     divInfo.classList.add("edu-hisinfo");
     headerTitulo.innerText = childData.titulo;
-    iconoFecha.innerText = childData.fechaInicio.substring(0,4) + ' - ' + childData.fechaFin.substring(0,4);
+    iconoFecha.innerText = childData.fechaInicio.substring(0, 4) + ' - ' + childData.fechaFin.substring(0, 4);
     spanInstituto.innerText = childData.instituto;
     descripcion.innerText = childData.descripcion;
 
@@ -80,6 +81,7 @@ function crearApartadoEducacion(childData) {
     divInfo.appendChild(spanInstituto);
     divInfo.appendChild(descripcion);
 }
+
 function cargarDatosExperiencia() {
     let query = firebase.database().ref("candidatos/" + user.uid + "/experiencia");
     query.on("value", function (snapshot) {
@@ -92,6 +94,7 @@ function cargarDatosExperiencia() {
     }, function (error) {
     });
 }
+
 function cargarDatosEducacion() {
     let query = firebase.database().ref("candidatos/" + user.uid + "/educacion");
     query.on("value", function (snapshot) {
