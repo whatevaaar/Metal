@@ -20,10 +20,11 @@ function crearApartadoVacanteCorto(childData) {
     let headerTitulo = document.createElement('h3');
     let spanCategoria = document.createElement('span');
     let spanFl = document.createElement('span');
+    let spanEye = document.createElement('span');
     let spanLocation = document.createElement('span');
-    let iconEye = document.createElement('span');
-    let iconFl = document.createElement('span');
-    let iconLocation = document.createElement('span');
+    let spanTextLocation = document.createElement('span');
+    let iconEye = document.createElement('i');
+    let iconLocation = document.createElement('i');
     divListing.classList.add("job-listing");
     divSec.classList.add("job-title-sec");
     enlace.href = 'job_single.html?id=' + childData.id;
@@ -33,17 +34,21 @@ function crearApartadoVacanteCorto(childData) {
     divSec.appendChild(headerTitulo);
     divSec.appendChild(spanCategoria);
     divListing.appendChild(divSec);
-    iconLocation.
+    iconLocation.classList.add("fas");
+    iconLocation.classList.add("fa-map-marker-alt");
+    iconEye.classList.add("fas");
+    iconEye.classList.add("fa-eye");
+    spanTextLocation.innerText = "CDMX, México";
+    spanLocation.appendChild(iconLocation);
+    spanLocation.appendChild(spanTextLocation);
+    spanLocation.classList.add("job-lctn");
+    spanEye.appendChild(iconEye);
+    spanEye.classList.add("fav-job");
+    spanFl.classList.add("job-is");
+    spanFl.classList.add("ft");
+    spanFl.innerText = "Tiempo Completo";
+    divListing.appendChild(spanLocation);
+    divListing.appendChild(spanEye);
+    divListing.appendChild(spanFl);
     seccion.appendChild(divListing);
 }
-<div class="job-listing">
-    <div class="job-title-sec">
-        <div class="c-logo"><img src="images/resource/l2.png" alt=""/></div>
-        <h3><a href="#" title="">Mensajero</a></h3>
-        <span>Administración</span>
-    </div>
-    <span class="job-lctn"><i class="fas fa-map-marker-alt"></i>CDMX, México</span>
-    <span class="fav-job"><i class="fas fa-eye"></i></span>
-    <span class="job-is ft">Tiempo Completo</span>
-</div><!-- Job -->
-
