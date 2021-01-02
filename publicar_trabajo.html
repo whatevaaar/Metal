@@ -44,10 +44,11 @@
         </div>
         <div class="responsive-opensec">
             <div class="btn-extars">
-                <a href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                <a id="mobile-a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                 <ul class="account-btns">
-                    <li class=""><a href="signup.html" title=""><i class="fas fa-key"></i> Sign Up</a></li>
-                    <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                    <li id="mobile-li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                 </ul>
             </div><!-- Btn Extras -->
             <form class="res-search">
@@ -56,18 +57,23 @@
             </form>
             <div class="responsivemenu">
                 <ul>
+
                     <li class="">
-                        <a href="index.html" title="">Home</a>
+                        <a href="#" title="">Home</a>
                     </li>
                     <li class="">
                         <a href="job_list.html" title="">Vacantes</a>
                     </li>
-                    <li class="">
+                    <li hidden id="mobile-li-candidatos" class="">
+                        <a href="candidates.html" title="">Candidatos</a>
+                    </li>
+                    <li id="mobile-li-mi-cv"class="">
                         <a href="mycv.html" title="">Tu CV</a>
                     </li>
                     <li class="">
                         <a href="#" title="">Conoce Extrategia</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -81,26 +87,29 @@
                             class="showsticky" src="images/resource/logo10.png" alt=""/></a>
                 </div><!-- Logo -->
                 <div class="btn-extars">
-                    <a href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                    <a id="a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                     <ul class="account-btns">
-                        <li class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
-                        <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                        <li id="li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                     </ul>
                 </div><!-- Btn Extras -->
                 <nav>
                     <ul>
                         <li class="">
-                            <a href="index.html" title="">Home</a>
+                            <a href="#" title="">Home</a>
                         </li>
                         <li class="">
                             <a href="job_list.html" title="">Vacantes</a>
                         </li>
-                        <li class="">
+                        <li hidden id="li-candidatos" class="">
+                            <a href="candidates.html" title="">Candidatos</a>
+                        </li>
+                        <li id="li-mi-cv"class="">
                             <a href="mycv.html" title="">Tu CV</a>
                         </li>
                         <li class="">
                             <a href="#" title="">Conoce Extrategia</a>
-                            <ul></ul>
                         </li>
                     </ul>
                 </nav><!-- Menus -->
@@ -151,10 +160,14 @@
                                             <span class="pf-title">Categoría</span>
                                             <div class="pf-field">
                                                 <select data-placeholder="Please Select Specialism" id="select-categoria" class="chosen">
-                                                    <option>Web Development</option>
-                                                    <option>Web Designing</option>
-                                                    <option>Art & Culture</option>
-                                                    <option>Reading & Writing</option>
+                                                    <option>PR & Comuniación</option>
+                                                    <option>Trainning</option>
+                                                    <option>Diseño Gráfico</option>
+                                                    <option>Multimedia</option>
+                                                    <option>Business and Media Intelligence</option>
+                                                    <option>Digital</option>
+                                                    <option>Planeación Estratégica</option>
+                                                    <option>Administrativo</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -162,10 +175,9 @@
                                             <span class="pf-title">Experiencia</span>
                                             <div class="pf-field">
                                                 <select data-placeholder="Seleccionar experiencia" id="select-experiencia" class="chosen">
-                                                    <option>Web Development</option>
-                                                    <option>Web Designing</option>
-                                                    <option>Art & Culture</option>
-                                                    <option>Reading & Writing</option>
+                                                    <option>Menos de 2 años</option>
+                                                    <option>De 2 a 4 años</option>
+                                                    <option>Más de 4 años</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -182,20 +194,21 @@
                                             <span class="pf-title">Industria</span>
                                             <div class="pf-field">
                                                 <select data-placeholder="Seleccionar industria" id="select-industria" class="chosen">
-                                                    <option>Web Development</option>
-                                                    <option>Web Designing</option>
-                                                    <option>Art & Culture</option>
-                                                    <option>Reading & Writing</option>
+                                                    <option>Alimento</option>
+                                                    <option>Bebidas</option>
+                                                    <option>Construcción</option>
+                                                    <option>Consultoría</option>
+                                                    <option>Consumo</option>
+                                                    <option>No aplica</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
+                                        <div class="col-lg-6">
                                             <span class="pf-title">Fecha de publicación</span>
                                             <div class="pf-field">
                                                 <input type="date" id="input-fecha" placeholder="01.11.207"  class="form-control datepicker" />
                                             </div>
                                         </div>
-
                                     </div>
                                 </form>
                             </div>
@@ -271,18 +284,6 @@
 <script src="js/tag.js" type="text/javascript"></script>
 <script src="js/maps3.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&callback=initMap"type="text/javascript"></script>
-
-
-<!-- Include Date Range Picker -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
-<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
-<script>
-    $(function(){
-        $('.datepicker').datepicker({
-            format: 'mm-dd-yyyy'
-        });
-    });
-</script>
 
 </body>
 </html>

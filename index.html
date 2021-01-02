@@ -43,10 +43,11 @@
         </div>
         <div class="responsive-opensec">
             <div class="btn-extars">
-                <a href="#" title="" href="publicar_trabajo.html" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                <a id="mobile-a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                 <ul class="account-btns">
-                    <li class=""><a href="signup.html" title=""><i class="fas fa-key"></i> Sign Up</a></li>
-                    <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                    <li id="mobile-li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                 </ul>
             </div><!-- Btn Extras -->
             <form class="res-search">
@@ -55,18 +56,23 @@
             </form>
             <div class="responsivemenu">
                 <ul>
+
                     <li class="">
                         <a href="index.html" title="">Home</a>
                     </li>
                     <li class="">
                         <a href="job_list.html" title="">Vacantes</a>
                     </li>
-                    <li class="">
+                    <li hidden id="mobile-li-candidatos" class="">
+                        <a href="candidates.html" title="">Candidatos</a>
+                    </li>
+                    <li id="mobile-li-mi-cv"class="">
                         <a href="mycv.html" title="">Tu CV</a>
                     </li>
                     <li class="">
                         <a href="#" title="">Conoce Extrategia</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -80,26 +86,29 @@
                             class="showsticky" src="images/resource/logo10.png" alt=""/></a>
                 </div><!-- Logo -->
                 <div class="btn-extars">
-                    <a href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                    <a id="a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                     <ul class="account-btns">
-                        <li class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
-                        <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                        <li id="li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                     </ul>
                 </div><!-- Btn Extras -->
                 <nav>
                     <ul>
                         <li class="">
-                            <a href="#" title="">Home</a>
+                            <a href="index.html" title="">Home</a>
                         </li>
                         <li class="">
                             <a href="job_list.html" title="">Vacantes</a>
                         </li>
-                        <li class="">
-                            <a href="#" title="">Tu CV</a>
+                        <li hidden id="li-candidatos" class="">
+                            <a href="candidates.html" title="">Candidatos</a>
+                        </li>
+                        <li id="li-mi-cv"class="">
+                            <a href="mycv.html" title="">Tu CV</a>
                         </li>
                         <li class="">
                             <a href="#" title="">Conoce Extrategia</a>
-                            <ul></ul>
                         </li>
                     </ul>
                 </nav><!-- Menus -->
@@ -177,7 +186,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-truck-loading"></i>
+                                            <i class="fas fa-chalkboard-teacher"></i>
                                             <span>Trainning</span>
                                             <p>(5 posiciones abiertas)</p>
                                         </a>
@@ -186,7 +195,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-chart-line"></i>
+                                            <i class="fas fa-palette"></i>
                                             <span>Diseño Gráfico</span>
                                             <p>(5 posiciones abiertas)</p>
                                         </a>
@@ -195,7 +204,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-users"></i>
+                                            <i class="fas fa-photo-video"></i>
                                             <span>Multimedia</span>
                                             <p>(5 posiciones abiertas)</p>
                                         </a>
@@ -208,8 +217,8 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-phone"></i>
-                                            <span>Business and Media Inteligence</span>
+                                            <i class="fas fa-brain"></i>
+                                            <span>Business and Media Intelligence</span>
                                             <p>(22 posiciones abiertas)</p>
                                         </a>
                                     </div>
@@ -217,7 +226,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-cutlery"></i>
+                                            <i class="fas fa-globe-americas"></i>
                                             <span>Digital</span>
                                             <p>(6 posiciones abiertas)</p>
                                         </a>
@@ -226,8 +235,8 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-building"></i>
-                                            <span>PR & Medios</span>
+                                            <i class="fas fa-chess-pawn"></i>
+                                            <span>Planeación Estratégica</span>
                                             <p>(3 posiciones abiertas)</p>
                                         </a>
                                     </div>
@@ -235,7 +244,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
                                         <a href="#" title="">
-                                            <i class="fas fa-user-md"></i>
+                                            <i class="fas fa-tasks"></i>
                                             <span>Administrativo</span>
                                             <p>(3 posiciones abiertas)</p>
                                         </a>
@@ -301,17 +310,13 @@
         <span class="close-popup"><i class="fas fa-close"></i></span>
         <h3>Login</h3>
         <span>Bienvenido de regreso</span>
-        <div class="select-user">
-            <span>Candidato</span>
-            <span>Administrador</span>
-        </div>
-        <form>
+        <form onsubmit="signInConCorreo(); return false;">
             <div class="cfield">
-                <input type="text" placeholder="Username"/>
+                <input type="text" id="sigin-form-username" placeholder="Username"/>
                 <i class="fas fa-user"></i>
             </div>
             <div class="cfield">
-                <input type="password" placeholder="********"/>
+                <input type="password" id="sigin-form-password" placeholder="********"/>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
             <a href="#" title="">Olvidaste tu contraseña?</a>

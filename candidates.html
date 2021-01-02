@@ -43,10 +43,11 @@
         </div>
         <div class="responsive-opensec">
             <div class="btn-extars">
-                <a href="#" title="" href="publicar_trabajo.html" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                <a id="mobile-a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                 <ul class="account-btns">
-                    <li class=""><a href="signup.html" title=""><i class="fas fa-key"></i> Sign Up</a></li>
-                    <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                    <li id="mobile-li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li id="mobile-li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                 </ul>
             </div><!-- Btn Extras -->
             <form class="res-search">
@@ -55,18 +56,23 @@
             </form>
             <div class="responsivemenu">
                 <ul>
+
                     <li class="">
                         <a href="index.html" title="">Home</a>
                     </li>
                     <li class="">
                         <a href="job_list.html" title="">Vacantes</a>
                     </li>
-                    <li class="">
+                    <li hidden id="mobile-li-candidatos" class="">
+                        <a href="candidates.html" title="">Candidatos</a>
+                    </li>
+                    <li id="mobile-li-mi-cv"class="">
                         <a href="mycv.html" title="">Tu CV</a>
                     </li>
                     <li class="">
                         <a href="#" title="">Conoce Extrategia</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -80,10 +86,11 @@
                             class="showsticky" src="images/resource/logo10.png" alt=""/></a>
                 </div><!-- Logo -->
                 <div class="btn-extars">
-                    <a href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
+                    <a id="a-publicar-trabajo" hidden href="publicar_trabajo.html" title="" class="post-job-btn"><i class="fas fa-feather-alt"></i>Publicar</a>
                     <ul class="account-btns">
-                        <li class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
-                        <li class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-in" class="signup-popup"><a title="" href="signup.html"><i class="fas fa-key"></i> Sign Up</a></li>
+                        <li id="li-login" class="signin-popup"><a title=""><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li id="li-sign-out" hidden class="signin-popup"><a onclick="signOut();" title=""><i class="fas fa-sign-in-alt"></i>Sign Out</a></li>
                     </ul>
                 </div><!-- Btn Extras -->
                 <nav>
@@ -94,12 +101,14 @@
                         <li class="">
                             <a href="job_list.html" title="">Vacantes</a>
                         </li>
-                        <li class="">
+                        <li hidden id="li-candidatos" class="">
+                            <a href="candidates.html" title="">Candidatos</a>
+                        </li>
+                        <li id="li-mi-cv"class="">
                             <a href="mycv.html" title="">Tu CV</a>
                         </li>
                         <li class="">
                             <a href="#" title="">Conoce Extrategia</a>
-                            <ul></ul>
                         </li>
                     </ul>
                 </nav><!-- Menus -->
@@ -130,13 +139,13 @@
                         <div class="widget">
                             <div class="search_widget_job">
                                 <div class="field_w_search">
-                                    <input type="text" placeholder="Search Keywords" />
+                                    <input type="text" placeholder="Buscar palabras clave" />
                                     <i class="fas fa-search"></i>
                                 </div><!-- Search Widget -->
                             </div>
                         </div>
                         <div class="widget">
-                            <h3 class="sb-title open">Specialism</h3>
+                            <h3 class="sb-title open">Especialidad</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox scrollbar">
                                     <p><input type="checkbox" name="spealism" id="as"><label for="as">Accountancy (2)</label></p>
@@ -149,23 +158,22 @@
                             </div>
                         </div>
                         <div class="widget">
-                            <h3 class="sb-title closed">Experince</h3>
+                            <h3 class="sb-title closed">Experiencia</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox">
-                                    <p><input type="checkbox" name="smplechk" id="9"><label for="9">1Year to 2Year</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="10"><label for="10">2Year to 3Year</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="11"><label for="11">3Year to 4Year</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="12"><label for="12">4Year to 5Year</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="9"><label for="9">Menos de 2 años</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="10"><label for="10">De 2 a 4 años</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="12"><label for="12">Más de 4 años</label></p>
                                 </div>
                             </div>
                         </div>
                         <div class="widget">
-                            <h3 class="sb-title closed">Gender</h3>
+                            <h3 class="sb-title closed">Género</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox">
-                                    <p><input type="checkbox" name="smplechk" id="13"><label for="13">Male</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="14"><label for="14">Female</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="15"><label for="15">Others</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="13"><label for="13">Hombre</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="14"><label for="14">Mujer</label></p>
+                                    <p><input type="checkbox" name="smplechk" id="15"><label for="15">Otro</label></p>
                                 </div>
                             </div>
                         </div>

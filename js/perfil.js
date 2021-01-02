@@ -1,3 +1,9 @@
+window.onload = cargarDatosSiExisten();
+
+function cargarDatosSiExisten(){
+
+}
+
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -51,10 +57,13 @@ function guardarPerfil(urlImgPerfil) {
     let twitter = document.getElementById("input-twitter").value;
     let linkedin = document.getElementById("input-linkedin").value;
     let direccion = generarDireccion();
+    let especialidades = conseguirEspecialidades();
     firebase.database().ref('candidatos/' + user.uid).set({
         nombre: nombre,
         email: email,
+        uid: user.uid,
         direccion: direccion,
+        especialidades: especialidades,
         numeroTelefonico: numeroTelefonico,
         facebook: facebook,
         twitter: twitter,
@@ -78,11 +87,14 @@ function guardarPerfil(urlImgPerfil) {
     });
 }
 
+function conseguirEspecialidades(){
+    let valoresTokenize = $('.tokenize-demo').val();
+    return valoresTokenize.toString();
+}
+
 function generarDireccion() {
     let municipio = document.getElementById("input-municipio").value;
     let colonia = document.getElementById("input-colonia").value;
-    let numeroDeCalle = document.getElementById("input-numero-calle").value;
-    let calle = document.getElementById("input-calle").value;
-    let cp = document.getElementById("input-cp").value;
-    return municipio + ',' + colonia + ',CP: ' + cp + ', ' + calle + ',' + numeroDeCalle;
+    let estado = document.getElementById("input-estado").value;
+    return estado + ',' + municipio + ', ' + colonia;
 }
