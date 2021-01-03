@@ -17,9 +17,9 @@ function crearApartadoSkills(childData) {
     divProgress.classList.add("with-edit");
     divBar.classList.add("progressbar");
     div.classList.add("progress");
+    div.style.width = childData.porcentaje + '%';
     spanPorcentaje.innerText = childData.porcentaje + '%';
     spanSkill.innerText = childData.skill;
-
     seccion.appendChild(divProgress);
     divProgress.appendChild(spanSkill);
     divProgress.appendChild(divBar);

@@ -27,7 +27,6 @@ function agregarExperiencia() {
     let fechaInicio = document.getElementById("fecha-inicio-experiencia").value;
     let fechaFin = document.getElementById("fecha-fin-experiencia").value;
     let empresa = document.getElementById("input-compania").value;
-    let actual = document.getElementById("input-presente").value;
     let descripcion = document.getElementById("input-descripcion-experiencia").value;
     let ref= firebase.database().ref('candidatos/' + user.uid + '/experiencia').push()
     ref.set({
@@ -35,7 +34,6 @@ function agregarExperiencia() {
         fechaInicio: fechaInicio,
         fechaFin: fechaFin,
         empresa: empresa,
-        trabajoActual: actual,
         descripcion: descripcion
     }, (error) => {
         if (error) {
