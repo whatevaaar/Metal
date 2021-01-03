@@ -66,8 +66,8 @@ function actualizarIngles() {
     let hablado = document.getElementById("input-ingles-hablado").value;
     let escrito = document.getElementById("input-porcentaje-skill").value;
     firebase.database().ref('candidatos/' + user.uid + '/ingles').set({
-        hablado: hablado,
-        escrito: escrito
+        Hablado: hablado,
+        Escrito: escrito
     }, (error) => {
         if (error) {
             alert(error);

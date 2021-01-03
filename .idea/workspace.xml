@@ -23,13 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/candidate_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidate_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editarCV.html" beforeDir="false" afterPath="$PROJECT_DIR$/editarCV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/editarCV.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editarCV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mycv.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mycv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycv.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/job_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/job_single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/perfil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +69,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -109,6 +112,11 @@
       <workItem from="1609611801788" duration="3098000" />
       <workItem from="1609625626652" duration="5790000" />
       <workItem from="1609631730474" duration="2781000" />
+      <workItem from="1609687772236" duration="599000" />
+      <workItem from="1609689501447" duration="6690000" />
+      <workItem from="1609697330426" duration="186000" />
+      <workItem from="1609697832041" duration="31000" />
+      <workItem from="1609697947049" duration="2475000" />
     </task>
     <servers />
   </component>

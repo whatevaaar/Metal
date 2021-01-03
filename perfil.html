@@ -168,6 +168,12 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
+                                            <span class="pf-title">Fecha de Nacimiento</span>
+                                            <div class="pf-field">
+                                                <input type="date" required id="input-nacimiento" placeholder="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
                                             <span class="pf-title">Estado</span>
                                             <div class="pf-field">
                                                 <input type="text" id="input-estado" placeholder="" />
@@ -189,7 +195,7 @@
                                             <span class="pf-title">Tu perfil</span>
                                             <div class="pf-field">
                                                 <div class="pf-field">
-                                                    <select data-placeholder="Selecciona el perfil que te identifica" class="chosen">
+                                                    <select id="input-perfil" data-placeholder="Selecciona el perfil que te identifica" class="chosen">
                                                         <option>PR</option>
                                                         <option>Digital</option>
                                                         <option>Administrativo</option>
@@ -204,15 +210,33 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
+                                            <span class="pf-title">Industria</span>
+                                            <div class="pf-field">
+                                                <div class="pf-field">
+                                                    <select id="input-industria" data-placeholder="Selecciona la industria en la que te especializas" class="chosen">
+                                                        <option>Alimentos</option>
+                                                        <option>Pharma</option>
+                                                        <option>Construcción</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
                                             <span class="pf-title">Género</span>
                                             <div class="pf-field">
                                                 <div class="pf-field">
-                                                    <select data-placeholder="Selecciona el perfil que te identifica" class="chosen">
+                                                    <select id="input-genero" data-placeholder="Selecciona el perfil que te identifica" class="chosen">
                                                         <option>Masculino</option>
                                                         <option>Femenino</option>
                                                         <option>Otro</option>
                                                     </select>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="pf-title">Último sueldo comprobable</span>
+                                            <div class="pf-field">
+                                                <input type="number" min="0" required id="input-sueldo" placeholder="" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -269,7 +293,7 @@
                                         <div class="col-lg-6">
                                             <span class="pf-title">Email</span>
                                             <div class="pf-field">
-                                                <input type="email" required id="input-email" placeholder="demo@jobhunt.com" />
+                                                <input type="email" required id="input-email" placeholder="" />
                                             </div>
                                         </div>
                                         <div class="col-lg-12">

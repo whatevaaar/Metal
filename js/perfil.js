@@ -56,6 +56,11 @@ function guardarPerfil(urlImgPerfil) {
     let facebook = document.getElementById("input-facebook").value;
     let twitter = document.getElementById("input-twitter").value;
     let linkedin = document.getElementById("input-linkedin").value;
+    let perfil = document.getElementById("input-perfil").value;
+    let genero = document.getElementById("input-genero").value;
+    let sueldo = document.getElementById("input-sueldo").value;
+    let fechaNacimiento = document.getElementById("input-nacimiento").value;
+    let industria = document.getElementById("input-industria").value;
     let direccion = generarDireccion();
     let especialidades = conseguirEspecialidades();
     firebase.database().ref('candidatos/' + user.uid).set({
@@ -68,6 +73,11 @@ function guardarPerfil(urlImgPerfil) {
         facebook: facebook,
         twitter: twitter,
         linkedin: linkedin,
+        perfil: perfil,
+        genero: genero,
+        sueldo: sueldo,
+        industria: industria,
+        fechaNacimiento: fechaNacimiento,
         imgPerfil: urlImgPerfil
     }, (error) => {
         if (error) {

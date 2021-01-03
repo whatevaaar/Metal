@@ -18,5 +18,6 @@ function actualizarDatos(data){
     document.getElementById("descripcion").innerText = data.descripcion;
     document.getElementById("genero").innerText = data.genero;
     document.getElementById("industria").innerText = data.industria;
-    document.getElementById("experiencia").innerText = data.experiencia
+    document.getElementById("experiencia").innerText = data.experiencia;
+    document.getElementById("span-fecha").innerText = data.fecha;
 }
