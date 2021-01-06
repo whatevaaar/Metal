@@ -318,35 +318,30 @@
 
 <script src="js/tokenize2.min.js"></script>
 <link href="css/tokenize2.min.css" rel="stylesheet" />
-<script>$('.tokenize-demo').tokenize2({
-    dataSource: 'select',
-    tokensMaxItems: 3,
-    searchFromStart: false,
-    placeholder: 'Escoge hasta 3 especialidades'
-
-});
-
+<script>
+inicializarTokenize();
 $('#input-perfil').on('change', function() {
     let newOptions = {};
     let $el = $("#input-especialidad");
     $el.empty(); // remove old options
     switch (this.value){
         case ("PR & Comunicación"): newOptions = opcionesPRComunicion; break;
+        case ("PR & Medios"): newOptions = opcionesPRMedios; break;
+        case ("Digital"): newOptions = opcionesDigital; break;
+        case ("Administrativo"): newOptions = opcionesAdministrativo; break;
+        case ("Multimedia"): newOptions = opcionesMultimedia; break;
+        case ("Planeación Estratégica"): newOptions = opcionesPlaneacion; break;
+        case ("Diseño Gráfico"): newOptions = opcionesGraphic; break;
+        case ("Trainning"): newOptions = opcionesTrainning; break;
+        case ("Business and Media Inteligence"): newOptions = opcionesBusiness; break;
+        default: break;
     }
     $.each(newOptions, function(key,value) {
         $el.append($("<option></option>")
             .attr("value", value).text(key));
     });
+    inicializarTokenize();
 });
-<option value="PR & Comunicación">PR & Comunicación</option>
-<option value="PR & Medios">PR & Medios</option>
-<option value="Digital">Digital</option>
-<option value="Administrativo">Administrativo</option>
-<option value="Multimedia">Multimedia</option>
-<option value="Business and Media Inteligence">Business and Media Inteligence</option>
-<option value="Planeación Estratégica">Planeación Estratégica</option>
-<option value="Diseño Gráfico">Diseño Gráfico</option>
-<option value="Trainning">Trainning</option>
 
 
 </script>

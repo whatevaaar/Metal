@@ -184,3 +184,12 @@ function generarDireccion() {
     let estado = document.getElementById("input-estado").value;
     return estado + ',' + municipio + ', ' + colonia;
 }
+
+function inicializarTokenize(){
+    $('.tokenize-demo').tokenize2({
+        dataSource: 'select',
+        tokensMaxItems: 3,
+        searchFromStart: false,
+        placeholder: 'Escoge hasta 3 especialidades dependientes del perfil que escogiste'
+    });
+}

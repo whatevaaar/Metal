@@ -4,14 +4,12 @@ function agregarEducacion() {
     let fechaInicio = document.getElementById("fecha-inicio-educacion").value;
     let fechaFin = document.getElementById("fecha-fin-educacion").value;
     let instituto = document.getElementById("input-instituto").value;
-    let descripcion = document.getElementById("input-descripcion-educacion").value;
     let ref= firebase.database().ref('candidatos/' + user.uid + '/educacion').push()
     ref.set({
         titulo: titulo,
         fechaInicio: fechaInicio,
         fechaFin: fechaFin,
         instituto: instituto,
-        descripcion: descripcion
     }, (error) => {
         if (error) {
             alert(error);
@@ -19,8 +17,28 @@ function agregarEducacion() {
             alert("Agregado a CV!");
         }
     });
+    limpiarApartadoEducacion();
 }
 
+function limpiarApartadoExperiencia() {
+    document.getElementById("input-titulo-experiencia").value = "";
+    document.getElementById("fecha-inicio-experiencia").value = "";
+    document.getElementById("fecha-fin-experiencia").value = "";
+    document.getElementById("input-compania").value = "";
+    document.getElementById("input-descripcion-experiencia").value = "";
+}
+
+function limpiarApartadoEducacion() {
+    document.getElementById("input-titulo-educacion").value = "";
+    document.getElementById("fecha-inicio-educacion").value = "";
+    document.getElementById("fecha-fin-educacion").value = "";
+    document.getElementById("input-instituto").value = "";
+}
+
+function limpiarApartadoSkill() {
+    document.getElementById("input-porcentaje-skill").value = "";
+    document.getElementById("input-skill").value = "";
+}
 function agregarExperiencia() {
     comprobarUsuarioEstaLogeado();
     let titulo = document.getElementById("input-titulo-experiencia").value;
@@ -42,6 +60,7 @@ function agregarExperiencia() {
             alert("Agregado a CV!");
         }
     });
+    limpiarApartadoExperiencia();
 }
 
 function agregarSkill() {
@@ -59,6 +78,7 @@ function agregarSkill() {
             alert("Agregado a CV!");
         }
     });
+    limpiarApartadoSkill();
 }
 
 function actualizarIngles() {
