@@ -14,6 +14,7 @@ function crearApartadoCandidato(childData) {
     let span = document.createElement('span');
     let enlace = document.createElement('a');
     img.classList.add("img-thumbnail");
+    img.src = childData.imgPerfil;
     divSquare.classList.add("emply-resume-list");
     divSquare.classList.add("square");
     divSquare.appendChild(divThumb);
@@ -26,7 +27,7 @@ function crearApartadoCandidato(childData) {
     divInfo.appendChild(header);
     divThumb.appendChild(img);
     divShort.appendChild(enlace);
-    enlace.href = "#";
+    enlace.href = "candidate_single.html?id=" + childData.uid;
     enlace.innerText = "Contactar";
     enlace.appendChild(iconoPlus);
     iconoPlus.classList.add("fas");

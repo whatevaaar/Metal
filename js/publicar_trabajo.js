@@ -22,6 +22,7 @@ function publicarVacante(){
             alert(error);
         } else {
             alert("Trabajo publicado");
+            window.location.href = "job_list.html"
         }
     });
 }

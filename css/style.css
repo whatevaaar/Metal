@@ -517,7 +517,7 @@ input[type=radio] + label::after {
   width: 6px !important;
   height: 6px !important;
   background: #fff;
-  border: 3px solid #fb236a;
+  border: 3px solid #fd7802;
   
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1556,7 +1556,7 @@ label::after {
     background: #7dc246;
 }
 .fill.fl {
-    background: #fb236a;
+    background: #fd7802;
 }
 .fill.tp {
     background: #26ae61;
@@ -1573,8 +1573,8 @@ label::after {
 }
 .job-is.fl,
 .job-list-modern .job-is.fl{
-    color: #fb236a;
-    border-color: #fb236a;
+    color: #fd7802;
+    border-color: #fd7802;
 }
 .job-is.tp,
 .job-list-modern .job-is.tp{
@@ -1845,7 +1845,7 @@ label::after {
 }
 
 .simple-text:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 
 .simple-text h3 {
@@ -2296,8 +2296,8 @@ header.style2 nav {
     float: right;
     font-family: Open Sans;
     font-size: 13px;
-    color: #fb236a;
-    border: 1px solid #fb236a;
+    color: #fd7802;
+    border: 1px solid #fd7802;
     
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -2454,14 +2454,14 @@ header.style2 nav {
     width: 100%;
     font-family: Open Sans;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
 }
 .top-compnay > a {
     float: none;
     font-family: Open Sans;
     font-size: 13px;
-    color: #fb236a;
-    border: 1px solid #fb236a;
+    color: #fd7802;
+    border: 1px solid #fd7802;
     
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -4264,7 +4264,7 @@ header.style5 .logo {
     font-family: lineawesome;
     content: "\f121";
     font-size: 20px;
-    color: #fb236a;
+    color: #fd7802;
     top: 50%;
     right: 20px;
     margin-top: -12px;
@@ -4567,7 +4567,7 @@ section.overlape {
 }
 .pagination a i {
     font-size: 15px;
-    color: #fb236a;
+    color: #fd7802;
 }
 .inner-header > h3 {
     float: left;
@@ -4611,7 +4611,7 @@ section.overlape {
     position: absolute;
     right: 15px;
     top: 12px;
-    color: #fb236a;
+    color: #fd7802;
     font-size: 24px;
 }
 .border-right {
@@ -4699,7 +4699,7 @@ aside .widget:first-child {
     padding-left: 31px;
 }
 .flchek label::before {
-    border-color: #fb236a !important;
+    border-color: #fd7802 !important;
 }
 .ftchek label::before {
     border-color: #8b91dd !important;
@@ -4792,7 +4792,7 @@ aside .subscribe_widget form input {
     color: #333333;
 }
 aside .subscribe_widget form button {
-    background: #fb236a;
+    background: #fd7802;
 }
 
 
@@ -4840,7 +4840,7 @@ aside .subscribe_widget form button {
     width: 16px;
     height: 16px;
     font-style: normal;
-    background: #fb236a;
+    background: #fd7802;
     
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -5043,7 +5043,7 @@ aside .subscribe_widget form button {
 
 }
 .job-search .tags-bar > span > i {
-    color: #fb236a;
+    color: #fd7802;
     background: #ffffff;
 }
 .job-search .tags-bar .action-tags a {
@@ -5288,8 +5288,8 @@ aside .widget.border:first-child {
     border-color: #1da1f2;
 }
 .share-bar  a.share-google {
-    color: #fb236a;
-    border-color: #fb236a;
+    color: #fd7802;
+    border-color: #fd7802;
 }
 
 .share-bar a.share-fb:hover {
@@ -5303,8 +5303,8 @@ aside .widget.border:first-child {
     color: #ffffff;
 }
 .share-bar  a.share-google:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 
@@ -5397,8 +5397,8 @@ aside .widget.border:first-child {
 }
 
 .apply-alternative span:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 
@@ -5677,7 +5677,7 @@ aside .widget.border:first-child {
     display: inline-block;
 }
 .apply-job-btn {
-    background: #fb236a;
+    background: #fd7802;
     font-family: Open Sans;
     font-size: 15px;
     font-weight: bold;
@@ -5722,7 +5722,7 @@ aside .widget.border:first-child {
 
     font-family: Open Sans;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
     width: 250px;
     height: 60px;
     margin-top: 35px;
@@ -5802,7 +5802,7 @@ aside .widget.border:first-child {
     float: left;
     width: 100%;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
     text-align: center;
     margin-top: 23px;
 }
@@ -6028,7 +6028,7 @@ aside .widget.border:first-child {
     float: left;
     width: 100%;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
 }
 .emply-list-info > h6 {
     float: left;
@@ -6173,7 +6173,7 @@ aside .widget.border:first-child {
   width: 18px;
   height: 18px;
   background: #ffffff;
-  border: 2px solid #fb236a;
+  border: 2px solid #fd7802;
   top: -5px;
 }
 .nstSlider .bar {
@@ -6181,7 +6181,7 @@ aside .widget.border:first-child {
   -moz-border-radius: 6px;
   border-radius: 6px;
   position: absolute;
-  background: #fb236a;
+  background: #fd7802;
   height: 8px;
   top: 0px;
 }
@@ -6313,7 +6313,7 @@ aside .widget.border:first-child {
     float: left;
     width: 50px;
     height: 50px;
-    background: #fb236a;
+    background: #fd7802;
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -6361,7 +6361,7 @@ aside .widget.border:first-child {
 .emply-btns > a {
     float: left;
     width: 100%;
-    background: #fb236a;
+    background: #fd7802;
     font-family: Open Sans;
     font-size: 13px;
     color: #ffffff;
@@ -6373,7 +6373,7 @@ aside .widget.border:first-child {
     -o-border-radius: 8px;
     border-radius: 8px;
 
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     padding: 11px 0;
     margin-top: 10px;
 }
@@ -6671,7 +6671,7 @@ aside .widget.border:first-child {
     top: -8px;
     width: 23px;
     height: 23px;
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
     font-style: normal;
     text-align: center;
@@ -6767,7 +6767,7 @@ aside .widget.border:first-child {
 .profile-form-edit > form button {
     float: right;
     background: #ffffff;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #202020;
     font-family: Open Sans;
     font-size: 15px;
@@ -6875,7 +6875,7 @@ aside .widget.border:first-child {
 .contact-edit > form button {
     float: right;
     background: #ffffff;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #202020;
     font-family: Open Sans;
     font-size: 15px;
@@ -6945,7 +6945,7 @@ aside .widget.border:first-child {
 .manage-jobs-sec > table thead tr td {
     font-size: 15px;
     font-weight: bold;
-    color: #fb236a;
+    color: #fd7802;
     padding-bottom: 14px;
 }
 .manage-jobs-sec > table thead {
@@ -7407,7 +7407,7 @@ aside .widget.border:first-child {
     top: -20px;
     width: 50px;
     height: 50px;
-    background: #fb236a;
+    background: #fd7802;
     text-align: center;
     color: #ffffff;
     line-height: 50px;
@@ -7505,7 +7505,7 @@ aside .widget.border:first-child {
     right: 19px;
     top: 0;
     font-size: 23px;
-    color: #fb236a;
+    color: #fd7802;
     line-height: 50px;
 }
 .contact-popup form > .popup-field textarea {
@@ -7534,7 +7534,7 @@ aside .widget.border:first-child {
     top: -20px;
     width: 50px;
     height: 50px;
-    background: #fb236a;
+    background: #fd7802;
     text-align: center;
     color: #ffffff;
     line-height: 50px;
@@ -7674,7 +7674,7 @@ table.alrt-table tbody td > span {
 .change-password form button {
     float: right;
     background: #ffffff;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #202020;
     font-family: Open Sans;
     font-size: 15px;
@@ -8179,7 +8179,7 @@ header.gradient{
     vertical-align: top;
     width: 70px;
     font-size: 50px;
-    color: #fb236a;
+    color: #fd7802;
     line-height: 60px;
 }
 .edu-hisinfo {
@@ -8616,7 +8616,7 @@ header.gradient{
     width: 100%;
     height: 50px;
     font-size: 13px;
-    background: #fb236a;
+    background: #fd7802;
     text-align: center;
     line-height: 50px;
     color: #ffffff;
@@ -8744,7 +8744,7 @@ header.gradient{
     top: 30px;
     width: 32px;
     height: 32px;
-    background: #fb236a;
+    background: #fd7802;
     
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -8948,7 +8948,7 @@ header.gradient{
     top: -20px;
     width: 50px;
     height: 50px;
-    background: #fb236a;
+    background: #fd7802;
     text-align: center;
     line-height: 50px;
     color: #ffffff;
@@ -9026,7 +9026,7 @@ header.gradient{
     top: -20px;
     width: 50px;
     height: 50px;
-    background: #fb236a;
+    background: #fd7802;
     text-align: center;
     line-height: 50px;
     color: #ffffff;
@@ -9148,13 +9148,13 @@ header.gradient{
     line-height: 27px;
     font-family: Open Sans;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
 }
 .border-title > a i {
     float: left;
     width: 27px;
     height: 27px;
-    background: #fb236a;
+    background: #fd7802;
     
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -9214,7 +9214,7 @@ header.gradient{
 }
 .resumeadd-form button {
     float: right;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #ffffff;
     font-family: Open Sans;
     font-size: 15px;
@@ -9348,7 +9348,7 @@ input[type="file"] {
 .coverletter-sec > form button {
     float: right;
     background: #ffffff;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #202020;
     font-family: Open Sans;
     font-size: 15px;
@@ -9473,8 +9473,8 @@ input[type="file"] {
     float: left;
     font-family: Open Sans;
     font-size: 15px;
-    color: #fb236a;
-    border: 2px solid #fb236a;
+    color: #fd7802;
+    border: 2px solid #fd7802;
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -9919,7 +9919,7 @@ blockquote > strong {
 .comment-detail > a {
     float: left;
     font-size: 13px;
-    color: #fb236a;
+    color: #fd7802;
     margin-top: 13px;
 }
 .comment-detail > a i {
@@ -9961,7 +9961,7 @@ blockquote > strong {
 .commentform-sec > form button {
     float: left;
     font-size: 15px;
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
     padding: 15px 28px;
     
@@ -10205,9 +10205,9 @@ header.white {
     font-family: open sans;
     font-size: 15px;
     color: #ffffff;
-    background: #fb236a;
+    background: #fd7802;
     padding: 15px 58px;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -10448,7 +10448,7 @@ terms {
     background: -o-linear-gradient(45deg,  rgba(251,35,106,1) 0%,rgba(251,35,106,1) 44%,rgba(20,31,114,1) 100%);
     background: -ms-linear-gradient(45deg,  rgba(251,35,106,1) 0%,rgba(251,35,106,1) 44%,rgba(20,31,114,1) 100%);
     background: linear-gradient(45deg,  rgba(251,35,106,1) 0%,rgba(251,35,106,1) 44%,rgba(20,31,114,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb236a', endColorstr='#141f72',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7802', endColorstr='#141f72',GradientType=1 );
     content: "";
 
     position: absolute;
@@ -10497,7 +10497,7 @@ terms {
 .how-work-box > span {
     width: 66px;
     height: 66px;
-    background: #fb236a;
+    background: #fd7802;
     position: absolute;
     left: 0;
     top: 50%;
@@ -10659,18 +10659,18 @@ terms {
 
 .stick-top .style3 .post-job-btn:hover {
     background: transparent;
-    border: 2px solid #fb236a;
-    color: #fb236a;
+    border: 2px solid #fd7802;
+    color: #fd7802;
 }
 
 .btn-extars .post-job-btn:hover {
     background: transparent;
-    border: 2px solid #fb236a;
+    border: 2px solid #fd7802;
     color: #FFF;
 }
 
 .account-popup > form button:hover{
-    background: #fb236a;
+    background: #fd7802;
 }
 
 .login-social a.tw-login:hover{
@@ -10686,27 +10686,27 @@ terms {
 }
 
 .job-search form button:hover{
-     background: #fb236a;
+     background: #fd7802;
 }
 .or-browser > a:hover {
     background: #ffffff;
     color: #333333;
 }
 .scroll-to:hover{
-    border-color: #fb236a;  
+    border-color: #fd7802;
 }
 .scroll-to:hover a{
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .browse-all-cat a:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .simple-text-block a:hover {
     border-color: #FFF;
     background: #FFF;
-    color: #fb236a;
+    color: #fd7802;
 }
 .fav-job.active {
     color: red;
@@ -10715,22 +10715,22 @@ terms {
     color: #fff;
 }
 header.style2 .post-job-btn:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 header.style2 .account-btns {
     padding: 10px 0;
 }
 .job-grid > a:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
-    border-color: #fb236a;
+    border-color: #fd7802;
 }
 .top-compnay > a:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
-    border-color: #fb236a;
+    border-color: #fd7802;
 }
 .subscription-sec form button:hover {
     background: #333333;
@@ -10754,7 +10754,7 @@ header.style3 .post-job-btn:hover {
 
 }
 .find-cand form > button:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 .download-text ul li a:hover {
     background: #7dc246;
@@ -10772,13 +10772,13 @@ header.style4 .account-btns > li a:hover {
     color: #ffffff;
 }
 .job-search form button:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 .p-category.style2:hover > a i {
-    color: #fb236a;
+    color: #fd7802;
 }
 .subscribe_widget form button:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 header.style5 .post-job-btn:hover {
     background: #ffffff;
@@ -10786,7 +10786,7 @@ header.style5 .post-job-btn:hover {
     border: 2px solid #fff;
 }
 .form-location-sec form button:hover{
-    background: #fb236a;
+    background: #fd7802;
 }
 .p-category.style2.gray:hover {
     background: #ffffff;
@@ -10821,8 +10821,8 @@ header.style5 .post-job-btn:hover {
     color: #333333;
 }
 .emlthis.active {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 .emlthis.active i {
@@ -10841,13 +10841,13 @@ header.style5 .post-job-btn:hover {
 }
 
 .apply-alternative a:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 .share-bar a:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 .quick-form-job form button:hover {
@@ -10856,11 +10856,11 @@ header.style5 .post-job-btn:hover {
     color: #424f95;
 }
 .emply-text > ul > li:hover::before {
-    background: #fb236a;
+    background: #fd7802;
     width: 20px;
 }
 .emply-text > ul > li:hover a {
-    color: #fb236a;
+    color: #fd7802;
 }
 .job-single-head.style2 > a:hover {
     
@@ -10873,10 +10873,10 @@ header.style5 .post-job-btn:hover {
     color: #ffffff;
 }
 .job-single-head.style2 > .apply-job-linkedin:hover {
-    color: #fb236a;
+    color: #fd7802;
 }
 .job-overview ul > li:hover i {
-    color: #fb236a;
+    color: #fd7802;
 }
 
 .emply-btns > a:hover {
@@ -10887,8 +10887,8 @@ header.style5 .post-job-btn:hover {
 
 .emply-btns > a.seemap:hover {
     background: transparent;
-    border-color: #fb236a;
-    color: #fb236a;
+    border-color: #fd7802;
+    color: #fd7802;
 }
 
 .upload-info > a:hover {
@@ -10904,7 +10904,7 @@ header.style5 .post-job-btn:hover {
 }
 .profile-form-edit > form button:hover,
 .contact-edit > form button:hover{
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .contact-edit .srch-lctn:hover {
@@ -10923,7 +10923,7 @@ header.style5 .post-job-btn:hover {
 
 }
 .table-list-title h3 a:hover {
-    color: #fb236a;
+    color: #fd7802;
 }
 .tree_widget-sec > ul > li > ul > li a:hover {
     color: #202020;
@@ -10932,7 +10932,7 @@ header.style5 .post-job-btn:hover {
     background: #333333;
 }
 .change-password form button:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .shortlists > a:hover {
@@ -10940,12 +10940,12 @@ header.style5 .post-job-btn:hover {
     color: #ffffff;
 }
 .action-inner .download-cv a:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
 }
 .follow-companies > ul li .job-listing.wtabs .go-unfollow:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #fff;
 }
 .border-title > a:hover {
@@ -10959,11 +10959,11 @@ header.style5 .post-job-btn:hover {
     border-color: #555555;
 }
 .coverletter-sec > form button:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .bbutton:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #ffffff;
 }
 .blogpost.style2 .blog-postdetail .bbutton:hover {
@@ -10974,13 +10974,13 @@ header.style5 .post-job-btn:hover {
     background: #fafafa;
 }
 .sidebar-links a:hover {
-    color: #fb236a;
+    color: #fd7802;
 }
 .mb-info > h3:hover{
-    color: #fb236a;
+    color: #fd7802;
 }
 .blog-postdetail > h3:hover {
-    color: #fb236a;
+    color: #fd7802;
 }
 .post-hist a:hover > i {
     background: #fafafa;
@@ -10989,25 +10989,25 @@ header.style5 .post-job-btn:hover {
     background: #555555;
 }
 .service:hover i {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 .contact-form > form button:hover {
     background: transparent;
-    border: 2px solid #fb236a;
-    color: #fb236a;    
+    border: 2px solid #fd7802;
+    color: #fd7802;
 }
 .contact-textinfo > a.fill:hover, .contact-textinfo > a:hover {
-    background: #fb236a;
-    border-color: #fb236a;
+    background: #fd7802;
+    border-color: #fd7802;
     color: #ffffff;
 }
 .error-sec form button:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 .error-sec h6 a:hover {
-    background: #fb236a;
+    background: #fd7802;
 }
 .menu-sec nav > ul > li ul li.menu-item-has-children > ul {
     position: absolute;
@@ -11104,7 +11104,7 @@ footer.ft .scrollup {
     margin-bottom: 17px;
 }
 .forsticky.sticky .post-job-btn:hover {
-    background: #fb236a;
+    background: #fd7802;
     color: #FFF;
 }
 .forsticky.sticky {
@@ -11132,8 +11132,8 @@ footer.ft .scrollup {
 }
 *:focus {outline:0;}
 .top-company-sec button.slick-arrow:hover {
-    background: #fb236a;
-    border: 2px solid #fb236a;
+    background: #fd7802;
+    border: 2px solid #fd7802;
 }
 .top-company-sec button.slick-arrow:hover:before {
     color: #ffffff;
@@ -11243,7 +11243,7 @@ footer.ft .scrollup {
     width: 16px;
     height: 16px;
     font-style: normal;
-    background: #fb236a;
+    background: #fd7802;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -11544,7 +11544,7 @@ footer.ft .scrollup {
     color: #ffffff;
 }
 .responsivemenu > ul > li ul > li a:hover {
-    color: #fb236a;
+    color: #fd7802;
     padding-left: 15px;
 }
 .res-openmenu.active {
@@ -11588,7 +11588,6 @@ footer.ft .scrollup {
 /* add new 21.03.2019 */ 
 
 .new-slide{
-    height: 700px;
     overflow: hidden;
     position: relative;
     background: rgb(20,31,114);
