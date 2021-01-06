@@ -153,6 +153,7 @@
                                 <div class="upload-img-bar">
                                     <span class="round"><img id="img-upload" src="images/resource/mpf1.jpg" alt="" /><i>x</i></span>
                                     <div class="upload-info">
+                                        <span class="pf-title">Sube una foto tuya donde se vea claramente tu rostro</span>
                                         <input type="file" id="input-img" name="img" accept="image/*" onchange="readURL(this)">
                                         <span>Tamaño máximo 1MB, dimensión mínima: 270x210, archivos soportados: .jpg & .png</span>
                                     </div>
@@ -174,6 +175,17 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
+                                            <span class="pf-title">Género</span>
+                                            <div class="pf-field">
+                                                <div class="pf-field">
+                                                    <select id="input-genero" data-placeholder="Selecciona el perfil que te identifica" class="chosen">
+                                                        <option>Masculino</option>
+                                                        <option>Femenino</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
                                             <span class="pf-title">Estado</span>
                                             <div class="pf-field">
                                                 <input type="text" id="input-estado" placeholder="" />
@@ -186,7 +198,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <span class="pf-title">Municipio</span>
+                                            <span class="pf-title">Municipio/Alcaldía</span>
                                             <div class="pf-field">
                                                 <input type="text" id="input-municipio" placeholder="" />
                                             </div>
@@ -196,57 +208,30 @@
                                             <div class="pf-field">
                                                 <div class="pf-field">
                                                     <select id="input-perfil" data-placeholder="Selecciona el perfil que te identifica" class="chosen">
-                                                        <option>PR</option>
-                                                        <option>Digital</option>
-                                                        <option>Administrativo</option>
-                                                        <option>DG</option>
-                                                        <option>Multimedia</option>
-                                                        <option>BI</option>
-                                                        <option>Planeación Estratégica</option>
-                                                        <option>Medios</option>
-                                                        <option>Trainning</option>
+                                                        <option value="PR & Comunicación">PR & Comunicación</option>
+                                                        <option value="PR & Medios">PR & Medios</option>
+                                                        <option value="Digital">Digital</option>
+                                                        <option value="Administrativo">Administrativo</option>
+                                                        <option value="Multimedia">Multimedia</option>
+                                                        <option value="Business and Media Inteligence">Business and Media Inteligence</option>
+                                                        <option value="Planeación Estratégica">Planeación Estratégica</option>
+                                                        <option value="Diseño Gráfico">Diseño Gráfico</option>
+                                                        <option value="Trainning">Trainning</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <span class="pf-title">Industria</span>
-                                            <div class="pf-field">
-                                                <div class="pf-field">
-                                                    <select id="input-industria" data-placeholder="Selecciona la industria en la que te especializas" class="chosen">
-                                                        <option>Alimentos</option>
-                                                        <option>Pharma</option>
-                                                        <option>Construcción</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <span class="pf-title">Género</span>
-                                            <div class="pf-field">
-                                                <div class="pf-field">
-                                                    <select id="input-genero" data-placeholder="Selecciona el perfil que te identifica" class="chosen">
-                                                        <option>Masculino</option>
-                                                        <option>Femenino</option>
-                                                        <option>Otro</option>
-                                                    </select>
-                                                </div>
+                                            <span class="pf-title">Especialidad</span>
+                                            <div class="pf-field no-margin">
+                                                <select id="input-especialidad" class="tokenize-demo" multiple>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <span class="pf-title">Último sueldo comprobable</span>
                                             <div class="pf-field">
                                                 <input type="number" min="0" required id="input-sueldo" placeholder="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <span class="pf-title">Especialidad</span>
-                                            <div class="pf-field no-margin">
-                                                <select class="tokenize-demo" multiple>
-                                                    <option value="Diseño">Diseño</option>
-                                                    <option value="PR">PR</option>
-                                                    <option value="Bussiness and Media Intelligence">Bussiness and Media Intelligence</option>
-                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -339,7 +324,33 @@
     searchFromStart: false,
     placeholder: 'Escoge hasta 3 especialidades'
 
-});</script>
+});
+
+$('#input-perfil').on('change', function() {
+    let newOptions = {};
+    let $el = $("#input-especialidad");
+    $el.empty(); // remove old options
+    switch (this.value){
+        case ("PR & Comunicación"): newOptions = opcionesPRComunicion; break;
+    }
+    $.each(newOptions, function(key,value) {
+        $el.append($("<option></option>")
+            .attr("value", value).text(key));
+    });
+});
+<option value="PR & Comunicación">PR & Comunicación</option>
+<option value="PR & Medios">PR & Medios</option>
+<option value="Digital">Digital</option>
+<option value="Administrativo">Administrativo</option>
+<option value="Multimedia">Multimedia</option>
+<option value="Business and Media Inteligence">Business and Media Inteligence</option>
+<option value="Planeación Estratégica">Planeación Estratégica</option>
+<option value="Diseño Gráfico">Diseño Gráfico</option>
+<option value="Trainning">Trainning</option>
+
+
+</script>
+
 </body>
 </html>
 

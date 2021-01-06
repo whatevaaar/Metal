@@ -24,11 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidate_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidate_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editarCV.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editarCV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/job_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/job_single.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/perfil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
     </list>
@@ -117,6 +112,9 @@
       <workItem from="1609697330426" duration="186000" />
       <workItem from="1609697832041" duration="31000" />
       <workItem from="1609697947049" duration="2475000" />
+      <workItem from="1609814488784" duration="5383000" />
+      <workItem from="1609886517840" duration="5924000" />
+      <workItem from="1609948873228" duration="4130000" />
     </task>
     <servers />
   </component>
@@ -145,6 +143,12 @@
           <url>file://$PROJECT_DIR$/js/firebase.js</url>
           <line>60</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/perfil.js</url>
+          <line>20</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
