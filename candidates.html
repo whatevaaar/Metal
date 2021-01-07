@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
     <link rel="stylesheet" type="text/css" href="css/chosen.css"/>
@@ -145,15 +142,15 @@
                             </div>
                         </div>
                         <div class="widget">
-                            <h3 class="sb-title open">Especialidad</h3>
+                            <h3 class="sb-title open">Perfil</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox scrollbar">
-                                    <p><input type="checkbox" name="spealism" id="as"><label for="as">Accountancy (2)</label></p>
-                                    <p><input type="checkbox" name="spealism" id="asd"><label for="asd">Banking (2)</label></p>
-                                    <p><input type="checkbox" name="spealism" id="errwe"><label for="errwe">Charity & Voluntary (3)</label></p>
-                                    <p><input type="checkbox" name="spealism" id="fdg"><label for="fdg">Digital & Creative (4)</label></p>
-                                    <p><input type="checkbox" name="spealism" id="sc"><label for="sc">Estate Agency (3)</label></p>
-                                    <p><input type="checkbox" name="spealism" id="aw"><label for="aw">Graduate (2)</label></p>
+                                    <p><input type="checkbox" name="spealism" id="as"><label for="as">PR & Comunicación</label></p>
+                                    <p><input type="checkbox" name="spealism" id="asd"><label for="asd">PR & Medios</label></p>
+                                    <p><input type="checkbox" name="spealism" id="errwe"><label for="errwe">Digital</label></p>
+                                    <p><input type="checkbox" name="spealism" id="fdg"><label for="fdg">Administrativo</label></p>
+                                    <p><input type="checkbox" name="spealism" id="sc"><label for="sc">Multimedia</label></p>
+                                    <p><input type="checkbox" name="spealism" id="aw"><label for="aw"></label></p>
                                 </div>
                             </div>
                         </div>
@@ -194,17 +191,13 @@
         <span class="close-popup"><i class="fas fa-close"></i></span>
         <h3>Login</h3>
         <span>Bienvenido de regreso</span>
-        <div class="select-user">
-            <span>Candidato</span>
-            <span>Administrador</span>
-        </div>
-        <form>
+        <form onsubmit="signInConCorreo(); return false;">
             <div class="cfield">
-                <input type="text" placeholder="Username"/>
+                <input type="text" id="sigin-form-username" placeholder="Username"/>
                 <i class="fas fa-user"></i>
             </div>
             <div class="cfield">
-                <input type="password" placeholder="********"/>
+                <input type="password" id="sigin-form-password" placeholder="********"/>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
             <a href="#" title="">Olvidaste tu contraseña?</a>
@@ -232,7 +225,7 @@
 <script src="js/firebase.js" type="text/javascript"></script>
 <script src="js/candidates.js" type="text/javascript"></script>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/modernizr.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
@@ -240,9 +233,6 @@
 <script src="js/slick.min.js" type="text/javascript"></script>
 <script src="js/parallax.js" type="text/javascript"></script>
 <script src="js/select-chosen.js" type="text/javascript"></script>
-<script src="js/jquery.scrollbar.min.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc537bQom7ajFpWE5sQaVyz1SQa9_tuY&sensor=true&libraries=places"></script>
-<script type="text/javascript" src="js/maps.js"></script><!-- Nice Select -->
 
 </body>
 </html>

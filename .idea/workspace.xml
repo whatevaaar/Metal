@@ -24,9 +24,16 @@
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editarCV.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editarCV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/perfil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidates.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/job_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/job_single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/publicar_trabajo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/publicar_trabajo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publicar_trabajo.html" beforeDir="false" afterPath="$PROJECT_DIR$/publicar_trabajo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup_admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +123,8 @@
       <workItem from="1609814488784" duration="5383000" />
       <workItem from="1609886517840" duration="5924000" />
       <workItem from="1609948873228" duration="4130000" />
-      <workItem from="1609953901090" duration="2415000" />
+      <workItem from="1609953901090" duration="5824000" />
+      <workItem from="1609976839111" duration="3639000" />
     </task>
     <servers />
   </component>
@@ -150,6 +158,12 @@
           <url>file://$PROJECT_DIR$/js/perfil.js</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/candidate_single.js</url>
+          <line>74</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

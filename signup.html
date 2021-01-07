@@ -181,17 +181,13 @@
         <span class="close-popup"><i class="fas fa-close"></i></span>
         <h3>Login</h3>
         <span>Bienvenido de regreso</span>
-        <div class="select-user">
-            <span>Candidato</span>
-            <span>Administrador</span>
-        </div>
-        <form>
+        <form onsubmit="signInConCorreo(); return false;">
             <div class="cfield">
-                <input type="text" placeholder="Username"/>
+                <input type="text" id="sigin-form-username" placeholder="Username"/>
                 <i class="fas fa-user"></i>
             </div>
             <div class="cfield">
-                <input type="password" placeholder="********"/>
+                <input type="password" id="sigin-form-password" placeholder="********"/>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
             <a href="#" title="">Olvidaste tu contraseña?</a>
@@ -205,7 +201,6 @@
             </div>
         </div>
     </div>
-
 </div><!-- LOGIN POPUP -->
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->

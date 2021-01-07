@@ -3,16 +3,44 @@ const urlParams = new URLSearchParams(queryString);
 const idCandidato = urlParams.get('id');
 
 window.onload = cargarDatosCandidato();
+const averageDelta = ([x,...xs]) => {
+    if (x === undefined)
+        return NaN
+    else
+        return xs.reduce(
+            ([acc, last], x) => [acc + (x - last), x],
+            [0, x]
+        ) [0] / xs.length
+};
 
-function cargarDatosCandidato(){
+
+function cargarDatosCandidato() {
     let refCandidato = firebase.database().ref('candidatos/' + idCandidato);
-    refCandidato.on('value', (snapshot) =>{
+    refCandidato.on('value', (snapshot) => {
         const candidato = snapshot.val();
         actualizarDatos(candidato);
     });
 }
 
-function actualizarDatos(candidato){
+function calcularRotacion(uidCandidato) {
+    listaYears = []
+    let query = firebase.database().ref("candidatos/" + uidCandidato + "/experiencia");
+    query.on("value", function (snapshot) {
+        if (snapshot.empty)
+            return;
+        snapshot.forEach(function (childSnapshot) {
+            let childData = childSnapshot.val();
+            if (childData.fechaFin !== "")
+                listaYears.push(Number(childData.fechaFin.substring(0,4)));
+        });
+        document.getElementById('span-rotacion').innerText = averageDelta(listaYears.sort());
+
+    }, function (error) {
+    });
+}
+
+function actualizarDatos(candidato) {
+    calcularRotacion(candidato.uid);
     cargarDatosExperiencia(candidato.uid);
     cargarDatosEducacion(candidato.uid);
     cargarDatosSkills(candidato.uid);
@@ -25,6 +53,7 @@ function actualizarDatos(candidato){
     document.getElementById('span-genero').innerText = candidato.genero;
     document.getElementById('span-industria').innerText = candidato.industria;
     document.getElementById('span-sueldo').innerText = candidato.sueldo;
+    document.getElementById('span-edad').innerText = calcularEdad(candidato.fechaNacimiento);
     document.getElementById('img-perfil').src = candidato.imgPerfil;
     document.getElementById('a-facebook').src = candidato.facebook;
     document.getElementById('a-twitter').src = candidato.twitter;
@@ -42,6 +71,7 @@ function agregarEspecialidad(element) {
     enlace.innerText = element;
     document.getElementById('div-especialidades').appendChild(enlace);
 }
+
 function cargarDatosExperiencia(uidCandidato) {
     let query = firebase.database().ref("candidatos/" + uidCandidato + "/experiencia");
     query.on("value", function (snapshot) {
@@ -54,6 +84,7 @@ function cargarDatosExperiencia(uidCandidato) {
     }, function (error) {
     });
 }
+
 function cargarDatosEducacion(uidCandidato) {
     let query = firebase.database().ref("candidatos/" + uidCandidato + "/educacion");
     query.on("value", function (snapshot) {
@@ -66,6 +97,7 @@ function cargarDatosEducacion(uidCandidato) {
     }, function (error) {
     });
 }
+
 function cargarDatosIngles(uidCandidato) {
     let query = firebase.database().ref("candidatos/" + uidCandidato + "/ingles");
     query.on("value", function (snapshot) {
@@ -78,6 +110,7 @@ function cargarDatosIngles(uidCandidato) {
     }, function (error) {
     });
 }
+
 function cargarDatosSkills(uidCandidato) {
     let query = firebase.database().ref("candidatos/" + uidCandidato + "/skills");
     query.on("value", function (snapshot) {
@@ -90,6 +123,7 @@ function cargarDatosSkills(uidCandidato) {
     }, function (error) {
     });
 }
+
 function crearApartadoSkills(childData) {
     let seccion = document.getElementById("seccion-skills");
     let divProgress = document.createElement('div');
@@ -110,6 +144,7 @@ function crearApartadoSkills(childData) {
     divBar.appendChild(div);
     div.appendChild(spanPorcentaje);
 }
+
 function crearApartadoIngles(childData) {
     let seccion = document.getElementById("seccion-ingles");
     let divProgress = document.createElement('div');
@@ -130,6 +165,7 @@ function crearApartadoIngles(childData) {
     divBar.appendChild(div);
     div.appendChild(spanPorcentaje);
 }
+
 function crearApartadoEducacion(childData) {
     let seccion = document.getElementById("seccion-educacion");
     let divHistoria = document.createElement('div');
@@ -157,6 +193,7 @@ function crearApartadoEducacion(childData) {
     divInfo.appendChild(spanInstituto);
     divInfo.appendChild(descripcion);
 }
+
 function crearApartadoExperiencia(childData) {
     let seccion = document.getElementById("seccion-experiencia");
     let divHistoria = document.createElement('div');
@@ -182,4 +219,11 @@ function crearApartadoExperiencia(childData) {
     headerTitulo.appendChild(spanEmpresa);
     divInfo.appendChild(iconoFecha);
     divInfo.appendChild(descripcion);
+}
+
+function calcularEdad(fechaDeNacimiento) {
+    let birthday = new Date(fechaDeNacimiento);
+    let ageDifMs = Date.now() - birthday.getTime();
+    let ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
 }

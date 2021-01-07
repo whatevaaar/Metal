@@ -5,7 +5,7 @@ function publicarVacante(){
     let categoria = document.getElementById("select-categoria").value;
     let experiencia = document.getElementById("select-experiencia").value;
     let genero = document.getElementById("select-genero").value;
-    let industria = document.getElementById("select-industria").value;
+    let perfil = document.getElementById("select-perfil").value;
     let descripcion = document.getElementById("input-descripcion").value;
     let ref= firebase.database().ref('vacantes').push()
     ref.set({
@@ -14,7 +14,7 @@ function publicarVacante(){
         categoria: categoria,
         experiencia: experiencia,
         genero: genero,
-        industria: industria,
+        perfil: perfil,
         descripcion: descripcion,
         id: ref.key
     }, (error) => {

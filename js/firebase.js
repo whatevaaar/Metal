@@ -109,7 +109,9 @@ function signInConCorreo() {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((userL) => {
             user = userL;
-            actualizarPantallaLoggedIn();
+            actualizarPantallaLoggedInWeb();
+            actualizarPantallaLoggedInMobile();
+            window.location.href = "index.html";
         })
         .catch((error) => {
             alert(error);

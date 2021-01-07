@@ -59,7 +59,7 @@
                 <ul>
 
                     <li class="">
-                        <a href="#" title="">Home</a>
+                        <a href="index.html" title="">Home</a>
                     </li>
                     <li class="">
                         <a href="job_list.html" title="">Vacantes</a>
@@ -97,7 +97,7 @@
                 <nav>
                     <ul>
                         <li class="">
-                            <a href="#" title="">Home</a>
+                            <a href="index.html" title="">Home</a>
                         </li>
                         <li class="">
                             <a href="job_list.html" title="">Vacantes</a>
@@ -187,19 +187,23 @@
                                                 <select data-placeholder="Seleccionar género" id="select-genero" class="chosen">
                                                     <option>Masculino</option>
                                                     <option>Femenino</option>
+                                                    <option>No aplica</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <span class="pf-title">Industria</span>
+                                            <span class="pf-title">Perfil</span>
                                             <div class="pf-field">
-                                                <select data-placeholder="Seleccionar industria" id="select-industria" class="chosen">
-                                                    <option>Alimento</option>
-                                                    <option>Bebidas</option>
-                                                    <option>Construcción</option>
-                                                    <option>Consultoría</option>
-                                                    <option>Consumo</option>
-                                                    <option>No aplica</option>
+                                                <select data-placeholder="Seleccionar industria" id="select-perfil" class="chosen">
+                                                    <option value="PR & Comunicación">PR & Comunicación</option>
+                                                    <option value="PR & Medios">PR & Medios</option>
+                                                    <option value="Digital">Digital</option>
+                                                    <option value="Administrativo">Administrativo</option>
+                                                    <option value="Multimedia">Multimedia</option>
+                                                    <option value="Business and Media Inteligence">Business and Media Inteligence</option>
+                                                    <option value="Planeación Estratégica">Planeación Estratégica</option>
+                                                    <option value="Diseño Gráfico">Diseño Gráfico</option>
+                                                    <option value="Trainning">Trainning</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -235,17 +239,13 @@
         <span class="close-popup"><i class="fas fa-close"></i></span>
         <h3>Login</h3>
         <span>Bienvenido de regreso</span>
-        <div class="select-user">
-            <span>Candidato</span>
-            <span>Administrador</span>
-        </div>
-        <form>
+        <form onsubmit="signInConCorreo(); return false;">
             <div class="cfield">
-                <input type="text" placeholder="Username"/>
+                <input type="text" id="sigin-form-username" placeholder="Username"/>
                 <i class="fas fa-user"></i>
             </div>
             <div class="cfield">
-                <input type="password" placeholder="********"/>
+                <input type="password" id="sigin-form-password" placeholder="********"/>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
             <a href="#" title="">Olvidaste tu contraseña?</a>
