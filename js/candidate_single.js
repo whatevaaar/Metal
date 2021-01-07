@@ -51,7 +51,6 @@ function actualizarDatos(candidato) {
     document.getElementById('i-perfil').innerText = candidato.perfil;
     document.getElementById('span-ubicacion').innerText = candidato.direccion;
     document.getElementById('span-genero').innerText = candidato.genero;
-    document.getElementById('span-industria').innerText = candidato.industria;
     document.getElementById('span-sueldo').innerText = candidato.sueldo;
     document.getElementById('span-edad').innerText = calcularEdad(candidato.fechaNacimiento);
     document.getElementById('img-perfil').src = candidato.imgPerfil;

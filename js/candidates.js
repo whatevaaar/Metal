@@ -17,6 +17,9 @@ function crearApartadoCandidato(childData) {
     img.src = childData.imgPerfil;
     divSquare.classList.add("emply-resume-list");
     divSquare.classList.add("square");
+    divSquare.dataset.perfil = childData.perfil;
+    divSquare.dataset.genero = childData.genero;
+    calcularRotacion(divSquare, childData.uid);
     divSquare.appendChild(divThumb);
     divSquare.appendChild(divInfo);
     divSquare.appendChild(divShort);
@@ -54,3 +57,29 @@ function cargarCandidatos() {
     }, function (error) {
     });
 }
+function calcularRotacion(div, uidCandidato) {
+    listaYears = []
+    let query = firebase.database().ref("candidatos/" + uidCandidato + "/experiencia");
+    query.on("value", function (snapshot) {
+        if (snapshot.empty)
+            return;
+        snapshot.forEach(function (childSnapshot) {
+            let childData = childSnapshot.val();
+            if (childData.fechaFin !== "")
+                listaYears.push(Number(childData.fechaFin.substring(0,4)));
+        });
+        div.dataset.rotacion = averageDelta(listaYears.sort());
+
+    }, function (error) {
+    });
+}
+
+const averageDelta = ([x,...xs]) => {
+    if (x === undefined)
+        return NaN
+    else
+        return xs.reduce(
+            ([acc, last], x) => [acc + (x - last), x],
+            [0, x]
+        ) [0] / xs.length
+};

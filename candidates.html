@@ -144,23 +144,26 @@
                         <div class="widget">
                             <h3 class="sb-title open">Perfil</h3>
                             <div class="specialism_widget">
-                                <div class="simple-checkbox scrollbar">
-                                    <p><input type="checkbox" name="spealism" id="as"><label for="as">PR & Comunicación</label></p>
-                                    <p><input type="checkbox" name="spealism" id="asd"><label for="asd">PR & Medios</label></p>
-                                    <p><input type="checkbox" name="spealism" id="errwe"><label for="errwe">Digital</label></p>
-                                    <p><input type="checkbox" name="spealism" id="fdg"><label for="fdg">Administrativo</label></p>
-                                    <p><input type="checkbox" name="spealism" id="sc"><label for="sc">Multimedia</label></p>
-                                    <p><input type="checkbox" name="spealism" id="aw"><label for="aw"></label></p>
+                                <div class="simple-checkbox ">
+                                    <p><input value="PR & Comunicación" type="checkbox" name="spealism" id="as"><label for="as">PR & Comunicación</label></p>
+                                    <p><input value="PR & Medios" type="checkbox" name="spealism" id="asd"><label for="asd">PR & Medios</label></p>
+                                    <p><input value="Digital" type="checkbox" name="spealism" id="errwe"><label for="errwe">Digital</label></p>
+                                    <p><input value="Administrativo" type="checkbox" name="spealism" id="fdg"><label for="fdg">Administrativo</label></p>
+                                    <p><input value="Multimedia" type="checkbox" name="spealism" id="sc"><label for="sc">Multimedia</label></p>
+                                    <p><input value="Business and Media Inteligence" type="checkbox" name="spealism" id="aw"><label for="aw">Business and Media Inteligence</label></p>
+                                    <p><input value="Planeación Estratégica" type="checkbox" name="spealism" id="erwe"><label for="erwe">Planeación Estratégica</label></p>
+                                    <p><input value="Diseño Gráfico" type="checkbox" name="spealism" id="fg"><label for="fg">Diseño Gráfico</label></p>
+                                    <p><input value="Trainning" type="checkbox" name="spealism" id="sac"><label for="sac">Trainning</label></p>
                                 </div>
                             </div>
                         </div>
                         <div class="widget">
-                            <h3 class="sb-title closed">Experiencia</h3>
+                            <h3 class="sb-title closed">Rotación</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox">
-                                    <p><input type="checkbox" name="smplechk" id="9"><label for="9">Menos de 2 años</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="10"><label for="10">De 2 a 4 años</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="12"><label for="12">Más de 4 años</label></p>
+                                    <p><input type="checkbox" name="smplechkR" value="0" id="9"><label for="9">Menos de 2 años</label></p>
+                                    <p><input type="checkbox" name="smplechkR" value="2" id="10"><label for="10">De 2 a 4 años</label></p>
+                                    <p><input type="checkbox" name="smplechkR" value="4" id="12"><label for="12">Más de 4 años</label></p>
                                 </div>
                             </div>
                         </div>
@@ -168,9 +171,8 @@
                             <h3 class="sb-title closed">Género</h3>
                             <div class="specialism_widget">
                                 <div class="simple-checkbox">
-                                    <p><input type="checkbox" name="smplechk" id="13"><label for="13">Hombre</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="14"><label for="14">Mujer</label></p>
-                                    <p><input type="checkbox" name="smplechk" id="15"><label for="15">Otro</label></p>
+                                    <p><input type="checkbox" name="smplechk" value="Masculino" id="13"><label for="13">Masculino</label></p>
+                                    <p><input type="checkbox" name="smplechk" value="Femenino" id="14"><label for="14">Femenino</label></p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +235,53 @@
 <script src="js/slick.min.js" type="text/javascript"></script>
 <script src="js/parallax.js" type="text/javascript"></script>
 <script src="js/select-chosen.js" type="text/javascript"></script>
+<script>
+    $("input[name= 'spealism']").on('change', function () {
+        if ($(this).is(":checked")) {
+            let valor = $(this).val();
 
+            $(".emply-resume-list").each(function(){
+                if (valor !== $(this).data("perfil"))
+                    $(this).hide()
+
+            });
+        } else {
+            $(".emply-resume-list").each(function(){
+                    $(this).show()
+            });
+        }
+    });
+    $("input[name= 'smplechk']").on('change', function () {
+        if ($(this).is(":checked")) {
+            let valor = $(this).val();
+
+            $(".emply-resume-list").each(function(){
+                if (valor !== $(this).data("genero"))
+                    $(this).hide()
+
+            });
+        } else {
+            $(".emply-resume-list").each(function(){
+                $(this).show()
+            });
+        }
+    });
+    $("input[name= 'smplechkR']").on('change', function () {
+        if ($(this).is(":checked")) {
+            let valor = $(this).val();
+
+            $(".emply-resume-list").each(function(){
+                if (valor > $(this).data("rotacion"))
+                    $(this).hide()
+
+            });
+        } else {
+            $(".emply-resume-list").each(function(){
+                $(this).show()
+            });
+        }
+    });
+</script>
 </body>
 </html>
 
