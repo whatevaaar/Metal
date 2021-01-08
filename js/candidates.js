@@ -36,7 +36,7 @@ function crearApartadoCandidato(childData) {
     iconoPlus.classList.add("fas");
     iconoPlus.classList.add("fa-plus");
     seccion.appendChild(divSquare);
-    span.innerText = "Diseñador";
+    span.innerText = childData.perfil;
     parrafo.appendChild(iconoMapa);
     parrafo.innerText = "CDMX, México";
     iconoMapa.classList.add("fas");

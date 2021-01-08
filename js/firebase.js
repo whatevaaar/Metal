@@ -119,9 +119,28 @@ function signInConCorreo() {
         });
 }
 
+function redirigirABusqueda(){
+    let termino = document.getElementById('input-busqueda').value;
+    console.log(termino)
+    window.location.href = 'job_list.html?termino=' + termino;
+}
+
+function reestablecerPassword(){
+    let auth = firebase.auth();
+    let emailAddress = document.getElementById('input-email').value;
+    auth.sendPasswordResetEmail(emailAddress).then(function() {
+        alert("Correo enviado con éxito");
+    }).catch(function(error) {
+        // An error happened.
+        alert(error);
+    });
+
+}
+
 function signOut() {
     firebase.auth().signOut().then(function () {
         window.location.href = "signup.html";
     });
 }
+
 

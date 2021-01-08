@@ -14,7 +14,7 @@ function agregarEducacion() {
         if (error) {
             alert(error);
         } else {
-            alert("Agregado a CV!");
+            alert("Agregado a CV! Utiliza este mismo apartado para agregar más datos de tu educación");
         }
     });
     limpiarApartadoEducacion();
@@ -57,7 +57,7 @@ function agregarExperiencia() {
         if (error) {
             alert(error);
         } else {
-            alert("Agregado a CV!");
+            alert("Agregado a CV! Utiliza este mismo apartado para agregar más datos de tu educación");
         }
     });
     limpiarApartadoExperiencia();
@@ -75,7 +75,7 @@ function agregarSkill() {
         if (error) {
             alert(error);
         } else {
-            alert("Agregado a CV!");
+            alert("Agregado a CV! Utiliza este mismo apartado para agregar más skills");
         }
     });
     limpiarApartadoSkill();

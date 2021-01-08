@@ -23,7 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lost_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidate_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidate_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidates.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidates.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editarCV.html" beforeDir="false" afterPath="$PROJECT_DIR$/editarCV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/job_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidates.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/editarCV.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editarCV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/job_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/job_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/perfil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publicar_trabajo.html" beforeDir="false" afterPath="$PROJECT_DIR$/publicar_trabajo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup_admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +90,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emili\Documents\Code\Web\Metal" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -114,7 +133,8 @@
       <workItem from="1609886517840" duration="5924000" />
       <workItem from="1609948873228" duration="4130000" />
       <workItem from="1609953901090" duration="5824000" />
-      <workItem from="1609976839111" duration="8553000" />
+      <workItem from="1609976839111" duration="8973000" />
+      <workItem from="1610077234595" duration="13694000" />
     </task>
     <servers />
   </component>
@@ -145,14 +165,8 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/perfil.js</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/candidate_single.js</url>
-          <line>73</line>
-          <properties lambdaOrdinal="-1" />
+          <line>74</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

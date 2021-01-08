@@ -129,11 +129,11 @@
                                 <div class="job-search">
                                     <h3>Trabaja con nosotros</h3>
                                     <span>Encuentra trabajos y oportunidades laborales</span>
-                                    <form>
+                                    <form onsubmit="redirigirABusqueda(); return false;">
                                         <div class="row">
                                             <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
                                                 <div class="job-field">
-                                                    <input type="text" placeholder="Posiciones o palabras clave"/>
+                                                    <input id="input-busqueda" type="text" placeholder="Posiciones o palabras clave"/>
                                                     <i class="fas fa-keyboard-o"></i>
                                                 </div>
                                             </div>
@@ -170,43 +170,43 @@
                     <div class="col-lg-12">
                         <div class="heading">
                             <h2>Categorías</h2>
-                            <span>20 posiciones abiertas</span>
+                            <span id="span-categorias"></span>
                         </div><!-- Heading -->
                         <div class="cat-sec">
                             <div class="row no-gape">
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="job_list.html?categoria=PR" title="">
                                             <i class="fas fa-bullhorn"></i>
                                             <span>PR & Comunicación</span>
-                                            <p>(5 posiciones abiertas)</p>
+                                            <p id="p-pr"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="job_list.html?categoria=Trainning" title="">
                                             <i class="fas fa-chalkboard-teacher"></i>
                                             <span>Trainning</span>
-                                            <p>(5 posiciones abiertas)</p>
+                                            <p id="p-trainning"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="job_list.html?categoria=Diseño" title="">
                                             <i class="fas fa-palette"></i>
                                             <span>Diseño Gráfico</span>
-                                            <p>(5 posiciones abiertas)</p>
+                                            <p id="p-design"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="job_list.html?categoria=Multimedia" title="">
                                             <i class="fas fa-photo-video"></i>
                                             <span>Multimedia</span>
-                                            <p>(5 posiciones abiertas)</p>
+                                            <p id="p-multimedia"></p>
                                         </a>
                                     </div>
                                 </div>
@@ -216,37 +216,37 @@
                             <div class="row no-gape">
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="job_list.html?categoria=Business" title="">
                                             <i class="fas fa-brain"></i>
                                             <span>Business and Media Intelligence</span>
-                                            <p>(22 posiciones abiertas)</p>
+                                            <p id="p-business"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="" title="">
                                             <i class="fas fa-globe-americas"></i>
                                             <span>Digital</span>
-                                            <p>(6 posiciones abiertas)</p>
+                                            <p id="p-digital"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="" title="">
                                             <i class="fas fa-chess-pawn"></i>
                                             <span>Planeación Estratégica</span>
-                                            <p>(3 posiciones abiertas)</p>
+                                            <p id="p-planeacion"></p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="p-category">
-                                        <a href="#" title="">
+                                        <a href="" title="">
                                             <i class="fas fa-tasks"></i>
                                             <span>Administrativo</span>
-                                            <p>(3 posiciones abiertas)</p>
+                                            <p id="p-administrativo"></p>
                                         </a>
                                     </div>
                                 </div>
@@ -319,7 +319,7 @@
                 <input type="password" id="sigin-form-password" placeholder="********"/>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
-            <a href="#" title="">Olvidaste tu contraseña?</a>
+            <a href="lost_password.html" title="">Olvidaste tu contraseña?</a>
             <button type="submit">Login</button>
         </form>
         <div class="extra-login">

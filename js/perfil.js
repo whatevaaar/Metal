@@ -1,5 +1,8 @@
-window.onload = cargarDatosSiExisten();
 
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user)
+        cargarDatosSiExisten(user);
+});
 let opcionesPRComunicion = {
     "Tecnología": "Tecnología",
     "Corporativa": "Corporativa",
@@ -76,10 +79,39 @@ let opcionesPlaneacion = {
     "Carterea de clientes":"Carterea de clientes",
     "Inicio y cierre de ventas":"Inicio y cierre de ventas",
 };
-function cargarDatosSiExisten() {
 
+function cargarDatosSiExisten() {
+    let query = firebase.database().ref("candidatos/" + user.uid);
+    query.on("value", function (snapshot) {
+        if (snapshot.empty)
+            return;
+        cargarDatosDePerfil(snapshot.val());
+    }, function (error) {
+    });
 }
 
+function cargarDatosDePerfil(candidato) {
+    document.getElementById("input-nombre").value = candidato.nombre;
+    document.getElementById("img-upload").src = candidato.imgPerfil;
+    document.getElementById("input-email").value = candidato.email;
+    document.getElementById("input-numero-telefonico").value = candidato.numeroTelefonico;
+    document.getElementById("input-facebook").value = candidato.facebook;
+    document.getElementById("input-twitter").value = candidato.twitter;
+    document.getElementById("input-linkedin").value = candidato.linkedin;
+    document.getElementById("input-perfil").value = candidato.perfil;
+    document.getElementById("input-acerca").value = candidato.acerca;
+    document.getElementById("input-genero").value = candidato.genero;
+    document.getElementById("input-sueldo").value = candidato.sueldo;
+    document.getElementById("input-nacimiento").value = candidato.fechaNacimiento;
+    document.getElementById("input-municipio").value = candidato.direccion.split(',')[0];
+    document.getElementById("input-colonia").value = candidato.direccion.split(',')[1];
+    document.getElementById("input-estado").value = candidato.direccion.split(',')[2];
+    inicializarTokenize();
+    candidato.especialidades.split(',').forEach(  function (especialidad){
+        $('.tokenize-demo').tokenize2().trigger('tokenize:tokens:add', [especialidad, especialidad, true]);
+        }
+    );
+}
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -133,6 +165,7 @@ function guardarPerfil(urlImgPerfil) {
     let twitter = document.getElementById("input-twitter").value;
     let linkedin = document.getElementById("input-linkedin").value;
     let perfil = document.getElementById("input-perfil").value;
+    let acerca = document.getElementById("input-acerca").value;
     let genero = document.getElementById("input-genero").value;
     let sueldo = document.getElementById("input-sueldo").value;
     let fechaNacimiento = document.getElementById("input-nacimiento").value;
@@ -149,6 +182,7 @@ function guardarPerfil(urlImgPerfil) {
         twitter: twitter,
         linkedin: linkedin,
         perfil: perfil,
+        acerca: acerca,
         genero: genero,
         sueldo: sueldo,
         fechaNacimiento: fechaNacimiento,
@@ -189,5 +223,8 @@ function inicializarTokenize(){
         tokensMaxItems: 3,
         searchFromStart: false,
         placeholder: 'Escoge hasta 3 especialidades dependientes del perfil que escogiste'
+    });
+    $('.tokenize-demo').on('tokenize:select', function(container){
+        $(this).tokenize2().trigger('tokenize:search', [$(this).tokenize2().input.val()]);
     });
 }

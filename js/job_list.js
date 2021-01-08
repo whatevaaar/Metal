@@ -1,5 +1,29 @@
 window.onload = cargarVacantes();
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const categoria = urlParams.get('categoria');
+const termino = urlParams.get('termino');
+
+function filtrarPorCategoria() {
+    $(".div-vacante").each(function(){
+        let cadena = ($(this).data("categoria"));
+        if (!cadena.includes(categoria))
+            $(this).hide()
+
+    });
+}
+
+function filtrarPorTermino() {
+    $(".div-vacante").each(function(){
+        let dataCategoria = ($(this).data("categoria"));
+        let dataTitulo = ($(this).data("titulo"));
+        if (!(dataCategoria.includes(termino) || dataTitulo.includes(termino)))
+            $(this).hide()
+
+    });
+}
+
 function cargarVacantes() {
     let query = firebase.database().ref("vacantes");
     let contador = 0;
@@ -12,6 +36,10 @@ function cargarVacantes() {
             crearApartadoVacante(childData);
         });
     document.getElementById("header-trabajos").innerText = contador + ' Trabajos & Vacantes';
+    if (categoria)
+        filtrarPorCategoria();
+    if (termino)
+            filtrarPorTermino();
     }, function (error) {
     });
 }
@@ -31,6 +59,9 @@ function crearApartadoVacante(childData) {
     divCol.classList.add("col-md-6");
     divCol.classList.add("col-sm-6");
     divCol.classList.add("col-xs-12");
+    divCol.classList.add("div-vacante");
+    divCol.dataset.categoria = childData.categoria;
+    divCol.dataset.titulo = childData.titulo;
     divGrid.classList.add("job-grid");
     divGrid.classList.add("border");
     divTitle.classList.add("job-title-sec");
@@ -45,7 +76,7 @@ function crearApartadoVacante(childData) {
     divTitle.appendChild(headerTitulo);
     divTitle.appendChild(spanCategoria);
     spanIndustria.classList.add("job-lctn");
-    spanIndustria.innerText = childData.industria;
+    spanIndustria.innerText = 'CDMX';
     divGrid.appendChild(spanIndustria);
     divGrid.appendChild(enlaceAplicar);
     seccion.appendChild(divCol);
