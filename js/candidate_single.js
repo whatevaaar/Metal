@@ -55,7 +55,7 @@ function actualizarDatos(candidato) {
     document.getElementById('span-edad').innerText = calcularEdad(candidato.fechaNacimiento);
     document.getElementById('img-perfil').src = candidato.imgPerfil;
     document.getElementById('a-facebook').src = candidato.facebook;
-    document.getElementById('p-acerca').src = candidato.acerca;
+    document.getElementById('p-acerca').innerText = candidato.acerca;
     document.getElementById('a-twitter').src = candidato.twitter;
     document.getElementById('a-linkedin').src = candidato.linkedin;
     document.getElementById('a-mailto').src = 'mailto:' + candidato.email;
