@@ -12,21 +12,21 @@ function cargarUltimasVacantes() {
             total += 1;
             if (total < 5)
                 crearApartadoVacanteCorto(childData);
-            if (childData.perfil.includes("PR"))
+            if (childData.categoria.includes("PR & Comunicación"))
                 pr += 1;
-            else if (childData.perfil.includes("Trainning"))
+            else if (childData.categoria.includes("Trainning"))
                 trainning += 1;
-            else if (childData.perfil.includes("Diseño"))
+            else if (childData.categoria.includes("Diseño"))
                 design += 1;
-            else if (childData.perfil.includes("Multimedia"))
+            else if (childData.categoria.includes("Multimedia"))
                 multimedia += 1;
-            else if (childData.perfil.includes("Business"))
+            else if (childData.categoria.includes("Business"))
                 business += 1;
-            else if (childData.perfil.includes("Digital"))
+            else if (childData.categoria.includes("Digital"))
                 digital += 1;
-            else if (childData.perfil.includes("Planeación"))
+            else if (childData.categoria.includes("Planeación"))
                 planeacion += 1;
-            else if (childData.perfil.includes("Administrativo"))
+            else if (childData.categoria.includes("Administrativo"))
                 administrativo += 1;
         });
         document.getElementById('span-categorias').innerText = total + ' posiciones abiertas';

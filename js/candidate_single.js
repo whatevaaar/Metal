@@ -46,7 +46,6 @@ function actualizarDatos(candidato) {
     cargarDatosSkills(candidato.uid);
     cargarDatosIngles(candidato.uid);
     actualizarSeccionEspecialidades(candidato.especialidades);
-    document.getElementById('span-contactar').innerText = 'Contactar a ' + candidato.nombre;
     document.getElementById('h3-nombre').innerText = candidato.nombre;
     document.getElementById('i-perfil').innerText = candidato.perfil;
     document.getElementById('span-ubicacion').innerText = candidato.direccion;
@@ -58,7 +57,6 @@ function actualizarDatos(candidato) {
     document.getElementById('p-acerca').innerText = candidato.acerca;
     document.getElementById('a-twitter').src = candidato.twitter;
     document.getElementById('a-linkedin').src = candidato.linkedin;
-    document.getElementById('a-mailto').src = 'mailto:' + candidato.email;
 }
 
 function actualizarSeccionEspecialidades(especialidades) {

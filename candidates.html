@@ -136,8 +136,10 @@
                         <div class="widget">
                             <div class="search_widget_job">
                                 <div class="field_w_search">
-                                    <input type="text" placeholder="Buscar palabras clave" />
-                                    <i class="fas fa-search"></i>
+                                    <form id="form-search" onsubmit="filtrarPorTermino()">
+                                    <input type="text" id="input-busqueda" placeholder="Buscar palabras clave" />
+                                    <a onclick="document.getElementById('form-search').submit()"><i class="fas fa-search"></i></a>
+                                    </form>
                                 </div><!-- Search Widget -->
                             </div>
                         </div>

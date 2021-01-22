@@ -588,7 +588,7 @@ label::after {
     background: -o-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: -ms-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
     opacity: 0.85;
 }
 .main-slider-sec li {
@@ -1161,7 +1161,7 @@ label::after {
     width: 100%;
     padding: 9px 0;
     font-size: 30px;
-    background-color: #8b91dd; height: 61px;
+    background-color: #000; height: 61px;
     border-radius: 8px;
 }
 .job-search form .row {
@@ -1347,7 +1347,7 @@ label::after {
 .p-category > a i {
     float: left;
     width: 100%;
-    color: #8b91dd;
+    color: #000;
     font-size: 70px;
     margin-top: 30px;
 }
@@ -1550,7 +1550,7 @@ label::after {
     text-align: center;
 }
 .ft.fill {
-    background: #8b91dd;
+    background: #000;
 }
 .fill.pt {
     background: #7dc246;
@@ -1563,8 +1563,8 @@ label::after {
 }
 .job-is.ft,
 .job-list-modern .job-is.ft{
-    color: #8b91dd;
-    border-color: #8b91dd;
+    color: #000;
+    border-color: #000;
 }
 .job-is.pt,
 .job-list-modern .job-is.pt{
@@ -1582,7 +1582,7 @@ label::after {
     border-color: #26ae61;
 }
 .job-listing:hover {
-    border-left-color: #8b91dd;
+    border-left-color: #000;
     
     -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
@@ -1603,7 +1603,7 @@ label::after {
     color: #ffffff;
 }
 .layer.color.light::before {
-    background: #8b91dd;
+    background: #000;
     opacity: 0.9;
 }
 .reviews {
@@ -1678,7 +1678,7 @@ label::after {
     transform: rotate(-180deg);
 
     line-height: 30px;
-    color: #8b91dd;
+    color: #000;
 }
 .reviews-sec {
     float: left;
@@ -1836,7 +1836,7 @@ label::after {
     width: 100%;
     text-align: center;
     padding: 40px 0;
-    background: #8b91dd;
+    background: #000;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -4366,7 +4366,7 @@ footer.style3 span, footer.style3 a {
     background: -o-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: -ms-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
     opacity: 0.8;
 }
 .inner-header::after {
@@ -4528,8 +4528,8 @@ section.overlape {
 }
 .pagination li.active a, .pagination li a:hover {
     color: #ffffff;
-    background-color: #8b91dd;
-    border-color: #8b91dd;
+    background-color: #000;
+    border-color: #000;
 }
 .pagination li .delimeter {
     display: block;
@@ -4702,7 +4702,7 @@ aside .widget:first-child {
     border-color: #fd7802 !important;
 }
 .ftchek label::before {
-    border-color: #8b91dd !important;
+    border-color: #000 !important;
 }
 .ischek label::before {
     border-color: #f831e3 !important;
@@ -4861,7 +4861,7 @@ aside .subscribe_widget form button {
 .action-tags a {
     float: left;
     font-size: 13px;
-    color: #8b91dd;
+    color: #000;
     padding: 7px 6px;
     line-height: 17px;
 }
@@ -5324,9 +5324,9 @@ aside .widget.border:first-child {
 .apply-thisjob {
     float: left;
     width: 100%;
-    border: 2px solid #8b91dd;
+    border: 2px solid #000;
     text-align: center;
-    color: #8b91dd;
+    color: #000;
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -5449,7 +5449,7 @@ aside .widget.border:first-child {
     left: 23px;
     top: 5px;
     font-size: 30px;
-    color: #8b91dd;
+    color: #000;
 }
 .job-overview ul > li h3 {
     float: left;
@@ -5520,7 +5520,7 @@ aside .widget.border:first-child {
 .extra-job-info > span i {
     float: left;
     font-size: 30px;
-    color: #8b91dd;
+    color: #000;
     width: 30px;
     margin-right: 12px;
 }
@@ -5584,10 +5584,10 @@ aside .widget.border:first-child {
     float: left;
     line-height: 15px;
     margin-right: 8px;
-    color: #8b91dd;
+    color: #000;
 }
 .tags-jobs > li span {
-    color: #8b91dd;
+    color: #000;
 }
 .job-single-head2 > span {
     float: left;
@@ -5666,7 +5666,7 @@ aside .widget.border:first-child {
 }
 .job-single-head.style2 .job-head-info p i {
     float: none;
-    color: #8b91dd;
+    color: #000;
 }
 .job-single-head.style2 .job-head-info > span {
     margin-top: 5px;
@@ -5736,7 +5736,7 @@ aside .widget.border:first-child {
     top: 4px;
 }
 .viewall-jobs {
-    background: #8b91dd;
+    background: #000;
     width: 250px;
     height: 60px;
     line-height: 60px;
@@ -5787,7 +5787,7 @@ aside .widget.border:first-child {
     float: left;
     line-height: 15px;
     margin-right: 8px;
-    color: #8b91dd;
+    color: #000;
 }
 .job-single-info3 .job-is {
     margin: 0;
@@ -6013,7 +6013,7 @@ aside .widget.border:first-child {
     position: absolute;
     right: 0;
     top: 0;
-    color: #8b91dd;
+    color: #000;
     font-size: 13px;
 }
 .emply-list-info > h3 {
@@ -6097,7 +6097,7 @@ aside .widget.border:first-child {
     margin-bottom: 30px;
 }
 .alpha-pag a.active, .alpha-pag a:hover {
-    background: #8b91dd;
+    background: #000;
     color: #ffffff;
 }
 .alpha-pag a {
@@ -6277,7 +6277,7 @@ aside .widget.border:first-child {
     -o-box-shadow: none;
     box-shadow: none;
 
-    border-color: #8b91dd;
+    border-color: #000;
 }
 .alpha-pag.full a {
     font-size: 13px;
@@ -6379,8 +6379,8 @@ aside .widget.border:first-child {
 }
 .emply-btns > a.followus {
     background-color: #ffffff;
-    border-color: #8b91dd;
-    color: #8b91dd;
+    border-color: #000;
+    color: #000;
 }
 .job-head-wide .share-bar a {
     margin: 0 3px;
@@ -6485,12 +6485,12 @@ aside .widget.border:first-child {
 
 
 .tree_widget-sec > ul > li > a:hover {
-    color: #8b91dd;
+    color: #000;
 }
 
 .tree_widget-sec > ul > li > a:hover i
 {
-    color: #8b91dd;
+    color: #000;
 }
 
 .tree_widget-sec > ul > li > a i {
@@ -6612,10 +6612,10 @@ aside .widget.border:first-child {
 
 
 .tree_widget-sec > ul > li.inner-child.active > a {
-    color: #8b91dd;
+    color: #000;
 }
 .tree_widget-sec > ul > li.inner-child.active > a i {
-    color: #8b91dd;
+    color: #000;
 }
 .padding-left {
     float: left;
@@ -6695,8 +6695,8 @@ aside .widget.border:first-child {
     float: left;
     font-family: Open Sans;
     font-size: 15px;
-    color: #8b91dd;
-    border: 2px solid #8b91dd;
+    color: #000;
+    border: 2px solid #000;
     
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -6810,7 +6810,7 @@ aside .widget.border:first-child {
     right: 20px;
     top: 0;
     font-size: 20px;
-    color: #8b91dd;
+    color: #000;
     line-height: 48px;
 }
 .contact-edit > h3 {
@@ -6843,8 +6843,8 @@ aside .widget.border:first-child {
     float: left;
     font-family: Open Sans;
     font-size: 15px;
-    color: #8b91dd;
-    border: 2px solid #8b91dd;
+    color: #000;
+    border: 2px solid #000;
     
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -6993,7 +6993,7 @@ aside .widget.border:first-child {
     color: #7dc246 !important;
 }
 .status.active {
-    color: #8b91dd !important;
+    color: #000 !important;
 }
 .action_job {
     margin: 0;
@@ -7153,7 +7153,7 @@ aside .widget.border:first-child {
 .btns-profiles-sec > ul > li > a i {
     float: left;
     font-size: 22px;
-    color: #8b91dd;
+    color: #000;
     margin-right: 3px;
     width: 30px;
     line-height: 30px;
@@ -7247,7 +7247,7 @@ aside .widget.border:first-child {
 }
 .emply-resume-info > span i {
     font-style: normal;
-    color: #8b91dd;
+    color: #000;
 }
 .emply-resume-info > P {
     float: left;
@@ -7277,8 +7277,8 @@ aside .widget.border:first-child {
     float: left;
     font-family: Open Sans;
     font-size: 13px;
-    color: #8b91dd;
-    border: 2px solid #8b91dd;
+    color: #000;
+    border: 2px solid #000;
     width: 150px;
     height: 40px;
     padding-left: 30px;
@@ -7635,12 +7635,12 @@ aside .widget.border:first-child {
     display: none;
 }
 .step.active i {
-    background: #8b91dd;
-    border-color: #8b91dd;
+    background: #000;
+    border-color: #000;
     color: #ffffff;
 }
 .step.active span {
-    color: #8b91dd;
+    color: #000;
 }
 .tags-bar.rt {
     margin: 0;
@@ -7705,8 +7705,8 @@ table.alrt-table tbody td > span {
     float: left;
     font-family: Open Sans;
     font-size: 13px;
-    color: #8b91dd;
-    border: 2px solid #8b91dd;
+    color: #000;
+    border: 2px solid #000;
     width: 150px;
     height: 40px;
     padding-left: 30px;
@@ -7736,7 +7736,7 @@ header.gradient{
     background: -o-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: -ms-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
     position: relative;
     z-index: 2;
     float: left;
@@ -8025,7 +8025,7 @@ header.gradient{
 .cst img {
     float: left;
     width: 100%;
-    
+    height: 100%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -8052,7 +8052,7 @@ header.gradient{
 }
 .can-detail-s span i {
     font-style: normal;
-    color: #8b91dd;
+    color: #000;
 }
 .can-detail-s > p {
     float: left;
@@ -8074,8 +8074,8 @@ header.gradient{
 .download-cv a {
     float: right;
     background: #ffffff;
-    border: 2px solid #8b91dd;
-    color: #8b91dd;
+    border: 2px solid #000;
+    color: #000;
     font-family: Open Sans;
     font-size: 13px;
     padding: 14px 30px;
@@ -8094,7 +8094,7 @@ header.gradient{
 
 }
 
-.download-cv a:hover{background-color: #8b91dd; color: #FFF;}
+.download-cv a:hover{background-color: #000; color: #FFF;}
 
 .download-cv a i {
     margin-left: 5px;
@@ -8128,8 +8128,8 @@ header.gradient{
     margin-bottom: -5px;
 }
 .cand-extralink > li:hover a {
-    color: #8b91dd;
-    border-color: #8b91dd;
+    color: #000;
+    border-color: #000;
 }
 .cand-details-sec {
     float: left;
@@ -8190,7 +8190,7 @@ header.gradient{
     float: left;
     width: 100%;
     font-size: 16px;
-    color: #8b91dd;
+    color: #000;
     margin: 0;
         margin-top: 0px;
     margin-top: 10px;
@@ -8241,7 +8241,7 @@ header.gradient{
     top: 0;
     width: 16px;
     height: 16px;
-    border: 2px solid #8b91dd;
+    border: 2px solid #000;
     content: "";
     
     -webkit-border-radius: 50%;
@@ -8316,7 +8316,7 @@ header.gradient{
     background: -o-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: -ms-linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
     background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -8630,7 +8630,7 @@ header.gradient{
     margin-bottom: 20px;
 }
 .job-overview > a.contct-user {
-    background: #8b91dd;
+    background: #000;
 }
 .skill-perc {
     float: left;
@@ -8826,7 +8826,7 @@ header.gradient{
     top: -5px;
     font-size: 10px;
     font-weight: normal;
-    background: #8b91dd;
+    background: #000;
     height: 16px;
     line-height: 14px;
     width: 16px;
@@ -9079,8 +9079,8 @@ header.gradient{
     background: #ffffff;
     font-family: Open Sans;
     font-size: 13px;
-    color: #8b91dd;
-    border: 2px solid #8b91dd;
+    color: #000;
+    border: 2px solid #000;
     
     -webkit-border-radius: 21px;
     -moz-border-radius: 21px;
@@ -9176,7 +9176,7 @@ header.gradient{
 .editdel a {
     float: left;
     font-size: 22px;
-    color: #8b91dd;
+    color: #000;
     margin-left: 8px;
 }
 .edu-history.style2 .editdel {
@@ -9202,10 +9202,10 @@ header.gradient{
     top: 14px;
 }
 .border-title > a.cancel i {
-    background: #8b91dd;
+    background: #000;
 }
 .border-title > a.cancel {
-    color: #8b91dd;
+    color: #000;
 }
 .resumeadd-form {
     float: left;
@@ -9255,7 +9255,7 @@ input[type="file"] {
 }
 .custom-file-upload i
 {
-  color: #8b91dd;
+  color: #000;
     font-size: 32px;
   float: left;
   width: 100%;
@@ -9290,7 +9290,7 @@ input[type="file"] {
     width: 100%;
     font-family: Open Sans;
     font-size: 13px;
-    color: #8b91dd;
+    color: #000;
     line-height: 25px;
 }
 .uploadfield {
@@ -9331,7 +9331,7 @@ input[type="file"] {
 .table-list-title > i {
     font-family: Open Sans;
     font-size: 13px;
-    color: #8b91dd;
+    color: #000;
     font-style: normal;
     margin-bottom: 1px;
     float: left;
@@ -9442,7 +9442,7 @@ input[type="file"] {
     margin-right: 5px;
 }
 .post-metas > li a.metascomment {
-    color: #8b91dd;
+    color: #000;
 }
 .post-metas > li a.metascomment i{
     color: #a7a7a7;
@@ -9906,7 +9906,7 @@ blockquote > strong {
 .date-comment a {
     float: right;
     font-size: 13px;
-    color: #8b91dd;
+    color: #000;
 }
 .date-comment a i {
     font-size: 18px;
@@ -10622,7 +10622,7 @@ terms {
     text-align: center;
     padding: 0;
     font-size: 32px;
-    background: #8b91dd;
+    background: #000;
     
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -10880,8 +10880,8 @@ header.style5 .post-job-btn:hover {
 }
 
 .emply-btns > a:hover {
-    background: #8b91dd;
-    border-color: #8b91dd;
+    background: #000;
+    border-color: #000;
     color: #FFF;
 }
 
@@ -10892,7 +10892,7 @@ header.style5 .post-job-btn:hover {
 }
 
 .upload-info > a:hover {
-    background: #8b91dd;
+    background: #000;
     color: #ffffff;
 }
 .pf-field .chosen-container.chosen-container-single.chosen-container-single-nosearch.chosen-with-drop.chosen-container-active a {
@@ -10908,9 +10908,9 @@ header.style5 .post-job-btn:hover {
     color: #ffffff;
 }
 .contact-edit .srch-lctn:hover {
-    background: #8b91dd;
+    background: #000;
     color: #ffffff;
-    border-color: #8b91dd;
+    border-color: #000;
 }
 .pf-map #map_div {
     height: 300px;
@@ -10936,7 +10936,7 @@ header.style5 .post-job-btn:hover {
     color: #ffffff;
 }
 .shortlists > a:hover {
-    background: #8b91dd;
+    background: #000;
     color: #ffffff;
 }
 .action-inner .download-cv a:hover {
@@ -11192,7 +11192,7 @@ footer.ft .scrollup {
     margin: 0;
 }
 .alpha-pag.full a.selected {
-    background: #8b91dd;
+    background: #000;
     color: #ffffff;
 }
 .alpha-pag.full #filter li:first-child a {
@@ -11292,7 +11292,7 @@ footer.ft .scrollup {
 }
 .edu-history-sec .action_job li a {
     font-size: 19px;
-    color: #8b91dd;
+    color: #000;
 }
 .mp-col .action_job {
     float: left;
@@ -11306,7 +11306,7 @@ footer.ft .scrollup {
 }
 .mp-col .action_job li a {
     font-size: 19px;
-    color: #8b91dd;
+    color: #000;
 }
 .progress-sec.with-edit .action_job {
     position: absolute;
@@ -11315,7 +11315,7 @@ footer.ft .scrollup {
 }
 .progress-sec.with-edit .action_job li a {
     font-size: 19px;
-    color: #8b91dd;
+    color: #000;
 }
 .menu-sec nav > ul > li ul li.menu-item-has-children > ul > li {
     background: #fafafa;
@@ -11329,13 +11329,13 @@ footer.ft .scrollup {
     z-index: 9;
 }
 .cand-extralink > li.active a {
-    border-bottom: 2px solid #8b91dd;
+    border-bottom: 2px solid #000;
 }
 .responsive-header {
     float: left;
     width: 100%;
     position: relative;
-    background: #0b1b46;
+    background: #eb8850;
     padding: 0 25px;
     z-index: 99;
     display: none;
@@ -11597,7 +11597,7 @@ footer.ft .scrollup {
     background: -o-linear-gradient(130deg,  rgba(20,31,114,1) 0%,rgba(52,65,161,1) 71%,rgba(52,65,161,1) 100%);
     background: -ms-linear-gradient(130deg,  rgba(20,31,114,1) 0%,rgba(52,65,161,1) 71%,rgba(52,65,161,1) 100%);
     background: linear-gradient(130deg,  rgba(20,31,114,1) 0%,rgba(52,65,161,1) 71%,rgba(52,65,161,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
 
 }
 
@@ -11616,7 +11616,7 @@ footer.ft .scrollup {
     background: -o-linear-gradient(-150deg,  rgba(36,51,169,1) 0%,rgba(234,49,124,1) 71%,rgba(234,49,124,1) 100%);
     background: -ms-linear-gradient(-150deg,  rgba(36,51,169,1) 0%,rgba(234,49,124,1) 71%,rgba(234,49,124,1) 100%);
     background: linear-gradient(-150deg,  rgba(36,51,169,1) 0%,rgba(234,49,124,1) 71%,rgba(234,49,124,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#10195d',GradientType=1 );
 }
 
 .new-slide-2 img{ position: absolute; top: 20%; right: 0px; }

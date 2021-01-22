@@ -1,4 +1,7 @@
+const inputBusqueda = document.getElementById('input-busqueda');
 window.onload = cargarCandidatos();
+
+
 
 function crearApartadoCandidato(childData) {
     let seccion = document.getElementById("seccion-candidatos");
@@ -19,6 +22,7 @@ function crearApartadoCandidato(childData) {
     divSquare.classList.add("square");
     divSquare.dataset.perfil = childData.perfil;
     divSquare.dataset.genero = childData.genero;
+    divSquare.dataset.especialidades = childData.especialidades;
     calcularRotacion(divSquare, childData.uid);
     divSquare.appendChild(divThumb);
     divSquare.appendChild(divInfo);
@@ -83,3 +87,16 @@ const averageDelta = ([x,...xs]) => {
             [0, x]
         ) [0] / xs.length
 };
+
+function filtrarPorTermino() {
+    let termino = inputBusqueda.value.toLowerCase();
+    $(".seccion-candidatos").each(function(){
+        let dataPerfil = ($(this).data("perfil")).toLowerCase();
+        let dataGenero = ($(this).data("genero")).toLowerCase();
+        let dataRotacion = ($(this).data("rotacion")).toLowerCase();
+        let dataEspecialidades = ($(this).data("especialidades")).toLowerCase();
+        if (!(dataPerfil.includes(termino) || dataGenero.includes(termino) || dataRotacion.includes(termino) || dataRotacion.includes(termino)))
+            $(this).hide()
+
+    });
+}

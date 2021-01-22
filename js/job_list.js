@@ -15,10 +15,11 @@ function filtrarPorCategoria() {
 }
 
 function filtrarPorTermino() {
+    let terminoLC = termino.toLowerCase();
     $(".div-vacante").each(function(){
-        let dataCategoria = ($(this).data("categoria"));
-        let dataTitulo = ($(this).data("titulo"));
-        if (!(dataCategoria.includes(termino) || dataTitulo.includes(termino)))
+        let dataCategoria = ($(this).data("categoria")).toLowerCase();
+        let dataTitulo = ($(this).data("titulo")).toLowerCase();
+        if (!(dataCategoria.includes(terminoLC) || dataTitulo.includes(terminoLC)))
             $(this).hide()
 
     });
@@ -51,6 +52,7 @@ function crearApartadoVacante(childData) {
     let divTitle = document.createElement('div');
     let enlace = document.createElement('a');
     let enlaceAplicar = document.createElement('a');
+    let enlaceEditar = document.createElement('a');
     let headerTitulo = document.createElement('h3');
     let spanCategoria = document.createElement('span');
     let spanIndustria = document.createElement('span');
@@ -67,8 +69,11 @@ function crearApartadoVacante(childData) {
     divTitle.classList.add("job-title-sec");
     enlace.href = 'job_single.html?id=' + childData.id;
     enlaceAplicar.href = 'job_single.html?id=' + childData.id;
+    enlaceEditar.href = 'edit_job.html?id=' + childData.id;
     enlace.text = childData.titulo;
     enlaceAplicar.text = 'Aplicar';
+    enlaceEditar.text = 'Editar';
+    enlaceEditar.hidden = !esAdmin();
     headerTitulo.appendChild(enlace);
     spanCategoria.innerText = childData.categoria;
     divCol.appendChild(divGrid);
@@ -78,6 +83,7 @@ function crearApartadoVacante(childData) {
     spanIndustria.classList.add("job-lctn");
     spanIndustria.innerText = 'CDMX';
     divGrid.appendChild(spanIndustria);
+    divGrid.appendChild(enlaceEditar);
     divGrid.appendChild(enlaceAplicar);
     seccion.appendChild(divCol);
 }
