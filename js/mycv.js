@@ -62,7 +62,6 @@ function crearApartadoEducacion(childData) {
     let headerTitulo = document.createElement('h3');
     let iconoFecha = document.createElement('i');
     let spanInstituto = document.createElement('span');
-    let descripcion = document.createElement('p');
 
     divHistoria.classList.add("edu-history");
     iconoCap.classList.add("fas");
@@ -71,7 +70,6 @@ function crearApartadoEducacion(childData) {
     headerTitulo.innerText = childData.titulo;
     iconoFecha.innerText = childData.fechaInicio.substring(0, 4) + ' - ' + childData.fechaFin.substring(0, 4);
     spanInstituto.innerText = childData.instituto;
-    descripcion.innerText = childData.descripcion;
 
     seccion.appendChild(divHistoria);
     divHistoria.appendChild(iconoCap);
@@ -79,7 +77,6 @@ function crearApartadoEducacion(childData) {
     divInfo.appendChild(headerTitulo);
     divInfo.appendChild(iconoFecha);
     divInfo.appendChild(spanInstituto);
-    divInfo.appendChild(descripcion);
 }
 
 function cargarDatosExperiencia() {

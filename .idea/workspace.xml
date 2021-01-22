@@ -24,17 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidate_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidate_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidates.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidates.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit_job.html" beforeDir="false" afterPath="$PROJECT_DIR$/edit_job.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/candidates.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/edit_job.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/edit_job.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/job_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/job_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicar_trabajo.html" beforeDir="false" afterPath="$PROJECT_DIR$/publicar_trabajo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editarCV.html" beforeDir="false" afterPath="$PROJECT_DIR$/editarCV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mycv.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mycv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycv.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +124,7 @@
       <workItem from="1609976839111" duration="8973000" />
       <workItem from="1610077234595" duration="14009000" />
       <workItem from="1610120657716" duration="3108000" />
-      <workItem from="1611330057145" duration="6124000" />
+      <workItem from="1611330057145" duration="7244000" />
     </task>
     <servers />
   </component>
