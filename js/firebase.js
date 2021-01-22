@@ -55,6 +55,8 @@ function actualizarPantallaLoggedInMobile() {
 }
 
 function esAdmin() {
+    if(!user)
+        return false;
     return CORREOS_ADMIN.indexOf(user.email) >= 0;
 }
 

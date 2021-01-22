@@ -84,7 +84,7 @@ function agregarSkill() {
 function actualizarIngles() {
     comprobarUsuarioEstaLogeado();
     let hablado = document.getElementById("input-ingles-hablado").value;
-    let escrito = document.getElementById("input-porcentaje-skill").value;
+    let escrito = document.getElementById("input-ingles-escrito").value;
     firebase.database().ref('candidatos/' + user.uid + '/ingles').set({
         Hablado: hablado,
         Escrito: escrito

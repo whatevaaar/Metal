@@ -79,6 +79,27 @@ function crearApartadoEducacion(childData) {
     divInfo.appendChild(spanInstituto);
 }
 
+function crearApartadoIngles(childData) {
+    let seccion = document.getElementById("seccion-ingles");
+    let divProgress = document.createElement('div');
+    let divBar = document.createElement('div');
+    let div = document.createElement('div');
+    let spanSkill = document.createElement('span');
+    let spanPorcentaje = document.createElement('span');
+    divProgress.classList.add("progress-sec");
+    divProgress.classList.add("with-edit");
+    divBar.classList.add("progressbar");
+    div.classList.add("progress");
+    div.style.width = childData.val() + '%';
+    spanPorcentaje.innerText = childData.val() + '%';
+    spanSkill.innerText = childData.key;
+    seccion.appendChild(divProgress);
+    divProgress.appendChild(spanSkill);
+    divProgress.appendChild(divBar);
+    divBar.appendChild(div);
+    div.appendChild(spanPorcentaje);
+}
+
 function cargarDatosExperiencia() {
     let query = firebase.database().ref("candidatos/" + user.uid + "/experiencia");
     query.on("value", function (snapshot) {
@@ -119,13 +140,13 @@ function cargarDatosSkills() {
 }
 
 function cargarDatosIngles() {
-    let query = firebase.database().ref("candidatos/" + user.uid + "/inglés");
+    let query = firebase.database().ref("candidatos/" + user.uid + "/ingles");
     query.on("value", function (snapshot) {
         if (snapshot.empty)
             return;
         snapshot.forEach(function (childSnapshot) {
-            let childData = childSnapshot.val();
-            crearApartadoEducacion(childData);
+            let childData = childSnapshot;
+            crearApartadoIngles(childData);
         });
     }, function (error) {
     });
