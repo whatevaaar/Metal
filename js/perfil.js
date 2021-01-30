@@ -51,6 +51,7 @@ let opcionesDigital = {
     "Landing pages para campañas": "Landing pages para campañas",
     "Blog": "Blog",
     "Social Listening": "Social Listening",
+    "Compra de Medios Digitales":"Compra de Medios Digitales",
     "Google Analytics": "Google Analytics"
 };
 let opcionesPRMedios = {
@@ -83,7 +84,7 @@ let opcionesPlaneacion = {
 function cargarDatosSiExisten() {
     let query = firebase.database().ref("candidatos/" + user.uid);
     query.on("value", function (snapshot) {
-        if (snapshot.empty)
+        if (snapshot.empty || !snapshot.val())
             return;
         cargarDatosDePerfil(snapshot.val());
     }, function (error) {

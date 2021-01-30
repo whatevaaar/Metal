@@ -30,7 +30,7 @@
 </div>
 
 <div class="theme-layout" id="scrollup">
-
+    <?php include "php/mail.php"; ?>
     <div class="responsive-header">
         <div class="responsive-menubar">
             <div class="res-logo"><a href="index.html" title=""><img src="images/resource/logo.png" alt=""/></a></div>
@@ -130,6 +130,13 @@
                                     <div class="col-lg-6">
                                         <div id="div-especialidades" class="skills-btn"></div>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <div class="action-inner">
+                                            <div class="action-inner">
+                                                <a href="#" title="" id="a-eliminar"><i class="far fa-times-circle"></i><span id="span-elimimar"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -198,12 +205,13 @@
                                     </div><!-- Job Overview -->
                                     <div class="quick-form-job">
                                         <h3>Contacto</h3>
-                                        <form>
-                                            <input type="text" placeholder="Nombre" />
-                                            <input type="text" placeholder="Correo" />
-                                            <input type="text" placeholder="Número de teléfono" />
-                                            <textarea placeholder="Cuerpo del mensaje"></textarea>
-                                            <button class="submit">Mandar Correo</button>
+                                        <form action="php/mail.php" method="post">
+                                            <input type="text" name="input-nombre" placeholder="Nombre" />
+                                            <input type="text" name="input-correo-transmisor" placeholder="Correo" />
+                                            <input type="text" name="input-correo-receptor" id="input-correo-receptor" hidden/>
+                                            <input type="text" name="input-telefono" placeholder="Número de teléfono" />
+                                            <textarea name="input-cuerpo" placeholder="Cuerpo del mensaje"></textarea>
+                                            <button name="submit" class="submit">Mandar Correo</button>
                                         </form>
                                     </div>
                                 </div>
@@ -215,32 +223,6 @@
         </div>
     </section>
 
-</div>
-
-
-<div class="contactus-popup">
-    <div class="contact-popup">
-        <i class="fas fa-close close-contact"></i>
-        <h3>Send Message to “Ali TUFAN”</h3>
-        <form>
-            <div class="popup-field">
-                <input type="text" placeholder="Tera Planer" />
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="popup-field">
-                <input type="text" placeholder="demo@jobhunt.com" />
-                <i class="fas fa-envelope"></i>
-            </div>
-            <div class="popup-field">
-                <input type="text" placeholder="+90 538 845 09 85" />
-                <i class="fas fa-phone"></i>
-            </div>
-            <div class="popup-field">
-                <textarea placeholder="Message"></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
 </div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->

@@ -23,16 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19357ac2-2fee-496c-998b-88677fa32fc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editarCV.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editarCV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidate_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/candidate_single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidate_single.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidate_single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidates.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidates.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/mycv.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mycv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/perfil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycv.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,16 +75,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\emili\Documents\Code\Web\Metal\js" />
       <recent name="C:\Users\emili\Documents\Code\Web\Metal" />
+      <recent name="C:\Users\emili\Documents\Code\Web\Metal\js" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -123,7 +130,11 @@
       <workItem from="1609976839111" duration="8973000" />
       <workItem from="1610077234595" duration="14009000" />
       <workItem from="1610120657716" duration="3108000" />
-      <workItem from="1611330057145" duration="8580000" />
+      <workItem from="1611330057145" duration="10129000" />
+      <workItem from="1611723529253" duration="623000" />
+      <workItem from="1611725864140" duration="15166000" />
+      <workItem from="1611945089771" duration="1555000" />
+      <workItem from="1611947919482" duration="638000" />
     </task>
     <servers />
   </component>
@@ -155,7 +166,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/candidate_single.js</url>
-          <line>72</line>
+          <line>88</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

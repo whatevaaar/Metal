@@ -34,7 +34,7 @@ function crearApartadoCandidato(childData) {
     divInfo.appendChild(header);
     divThumb.appendChild(img);
     divShort.appendChild(enlace);
-    enlace.href = "candidate_single.html?id=" + childData.uid;
+    enlace.href = "candidate_single.php?id=" + childData.uid;
     enlace.innerText = "Contactar";
     enlace.appendChild(iconoPlus);
     iconoPlus.classList.add("fas");

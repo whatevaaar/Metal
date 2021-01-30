@@ -39,6 +39,17 @@ function calcularRotacion(uidCandidato) {
     });
 }
 
+function eliminarCandidato(uid) {
+    let refString = 'candidatos/' + uid;
+    firebase.database().ref(refString).remove().then(function() {
+       alert('Perfil Eliminado!');
+       window.location.href = 'candidates.html'
+    })
+        .catch(function(error) {
+            alert('Error! Intenta de nuevo', error);
+        });
+}
+
 function actualizarDatos(candidato) {
     calcularRotacion(candidato.uid);
     cargarDatosExperiencia(candidato.uid);
@@ -47,16 +58,21 @@ function actualizarDatos(candidato) {
     cargarDatosIngles(candidato.uid);
     actualizarSeccionEspecialidades(candidato.especialidades);
     document.getElementById('h3-nombre').innerText = candidato.nombre;
+    document.getElementById('input-correo-receptor').value = candidato.email;
     document.getElementById('i-perfil').innerText = candidato.perfil;
     document.getElementById('span-ubicacion').innerText = candidato.direccion;
     document.getElementById('span-genero').innerText = candidato.genero;
     document.getElementById('span-sueldo').innerText = candidato.sueldo;
+    document.getElementById('span-elimimar').innerText = 'Eliminar perfil de ' + candidato.nombre;
     document.getElementById('span-edad').innerText = calcularEdad(candidato.fechaNacimiento);
     document.getElementById('img-perfil').src = candidato.imgPerfil;
     document.getElementById('a-facebook').src = candidato.facebook;
     document.getElementById('p-acerca').innerText = candidato.acerca;
-    document.getElementById('a-twitter').src = candidato.twitter;
-    document.getElementById('a-linkedin').src = candidato.linkedin;
+    document.getElementById('a-twitter').href = candidato.twitter;
+    document.getElementById('a-linkedin').href = candidato.linkedin;
+    document.getElementById('a-eliminar').addEventListener("click", function() {
+        eliminarCandidato(candidato.uid);
+    }, false);
 }
 
 function actualizarSeccionEspecialidades(especialidades) {

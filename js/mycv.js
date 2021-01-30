@@ -105,6 +105,7 @@ function cargarDatosExperiencia() {
     query.on("value", function (snapshot) {
         if (snapshot.empty)
             return;
+        document.getElementById('seccion-experiencia').innerHTML = '';
         snapshot.forEach(function (childSnapshot) {
             let childData = childSnapshot.val();
             crearApartadoExperiencia(childData);
@@ -118,6 +119,7 @@ function cargarDatosEducacion() {
     query.on("value", function (snapshot) {
         if (snapshot.empty)
             return;
+        document.getElementById('seccion-educacion').innerHTML = '';
         snapshot.forEach(function (childSnapshot) {
             let childData = childSnapshot.val();
             crearApartadoEducacion(childData);
@@ -131,6 +133,7 @@ function cargarDatosSkills() {
     query.on("value", function (snapshot) {
         if (snapshot.empty)
             return;
+        document.getElementById('seccion-skills').innerHTML = '';
         snapshot.forEach(function (childSnapshot) {
             let childData = childSnapshot.val();
             crearApartadoSkills(childData);
@@ -144,6 +147,7 @@ function cargarDatosIngles() {
     query.on("value", function (snapshot) {
         if (snapshot.empty)
             return;
+        document.getElementById('seccion-ingles').innerHTML = '';
         snapshot.forEach(function (childSnapshot) {
             let childData = childSnapshot;
             crearApartadoIngles(childData);
