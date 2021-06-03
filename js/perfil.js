@@ -107,11 +107,15 @@ function cargarDatosDePerfil(candidato) {
     document.getElementById("input-municipio").value = candidato.direccion.split(',')[0];
     document.getElementById("input-colonia").value = candidato.direccion.split(',')[1];
     document.getElementById("input-estado").value = candidato.direccion.split(',')[2];
+    document.getElementById("input-portafolio").value = candidato.portafolio;
     inicializarTokenize();
     candidato.especialidades.split(',').forEach(  function (especialidad){
         $('.tokenize-demo').tokenize2().trigger('tokenize:tokens:add', [especialidad, especialidad, true]);
         }
     );
+    candidato.softSkills.split(',').forEach(  function (especialidad){
+        $('.tokenize-soft-skills').tokenize2().trigger('tokenize:tokens:add', [especialidad, especialidad, true]);
+        });
 }
 function readURL(input) {
     if (input.files && input.files[0]) {
@@ -129,6 +133,7 @@ function readURL(input) {
 }
 
 function cargarImgDePerfil() {
+    document.getElementById('img-loader').style.display = 'block';
     let storageRef = firebase.storage().ref('imagenes_de_perfil/' + user.uid);
     let uploadTask = storageRef.put($('#input-img').prop('files')[0]);
     uploadTask.on('state_changed', function (snapshot) {
@@ -168,10 +173,12 @@ function guardarPerfil(urlImgPerfil) {
     let perfil = document.getElementById("input-perfil").value;
     let acerca = document.getElementById("input-acerca").value;
     let genero = document.getElementById("input-genero").value;
+    let portafolio = document.getElementById("input-portafolio").value;
     let sueldo = document.getElementById("input-sueldo").value;
     let fechaNacimiento = document.getElementById("input-nacimiento").value;
     let direccion = generarDireccion();
     let especialidades = conseguirEspecialidades();
+    let softSkills = conseguirSoftSkills();
     firebase.database().ref('candidatos/' + user.uid).set({
         nombre: nombre,
         email: email,
@@ -183,9 +190,11 @@ function guardarPerfil(urlImgPerfil) {
         twitter: twitter,
         linkedin: linkedin,
         perfil: perfil,
+        portafolio: portafolio,
         acerca: acerca,
         genero: genero,
         sueldo: sueldo,
+        softSkills: softSkills,
         fechaNacimiento: fechaNacimiento,
         imgPerfil: urlImgPerfil
     }, (error) => {
@@ -196,7 +205,7 @@ function guardarPerfil(urlImgPerfil) {
                 displayName: nombre,
                 photoURL: urlImgPerfil
             }).then(function () {
-                window.location.href = "editarCV.html"
+                window.location.href = "mycv.html"
                 // Update successful.
             }).catch(function (error) {
                 alert(error);
@@ -208,6 +217,11 @@ function guardarPerfil(urlImgPerfil) {
 
 function conseguirEspecialidades() {
     let valoresTokenize = $('.tokenize-demo').val();
+    return valoresTokenize.toString();
+}
+
+function conseguirSoftSkills() {
+    let valoresTokenize = $('.tokenize-soft-skills').val();
     return valoresTokenize.toString();
 }
 
@@ -223,9 +237,15 @@ function inicializarTokenize(){
         dataSource: 'select',
         tokensMaxItems: 3,
         searchFromStart: false,
-        placeholder: 'Escoge hasta 3 especialidades dependientes del perfil que escogiste'
+        placeholder: 'Escoge hasta 3 especialidades dependientes de tu perfil'
     });
     $('.tokenize-demo').on('tokenize:select', function(container){
         $(this).tokenize2().trigger('tokenize:search', [$(this).tokenize2().input.val()]);
+    });
+    $('.tokenize-soft-skills').tokenize2({
+        tokensMaxItems: 3,
+        tokensAllowCustom: true,
+        placeholder: 'Escoge hasta 3 soft skills',
+        delimiter: [',', '-']
     });
 }

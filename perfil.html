@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<div class="page-loading">
+<div id="img-loader"class="page-loading">
     <img src="images/loader.gif" alt="" />
     <span>Skip Loader</span>
 </div>
@@ -141,7 +141,6 @@
                                 <ul>
                                     <li><a href="perfil.html" title=""><i class="fas fa-file-text"></i>Mi Perfil</a></li>
                                     <li><a href="mycv.html" title=""><i class="fas fa-briefcase"></i>Mi Curriculum</a></li>
-                                    <li><a href="editarCV.html" title=""><i class="fas fa-unlink"></i>Editar CV</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -151,7 +150,7 @@
                             <div class="profile-title">
                                 <h3>Mi Perfil</h3>
                                 <div class="upload-img-bar">
-                                    <span class="round"><img id="img-upload" src="images/resource/mpf1.jpg" alt="" /><i>x</i></span>
+                                    <span class="round"><img id="img-upload" src="images/resource/mpf1.jpg" alt="" /></span>
                                     <div class="upload-info">
                                         <span class="pf-title">Sube una foto tuya donde se vea claramente tu rostro</span>
                                         <input type="file" id="input-img" name="img" accept="image/*" onchange="readURL(this)">
@@ -204,6 +203,12 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
+                                            <span class="pf-title">Portafolio</span>
+                                            <div class="pf-field">
+                                                <input type="text" id="input-portafolio" placeholder="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
                                             <span class="pf-title">Tu perfil</span>
                                             <div class="pf-field">
                                                 <div class="pf-field">
@@ -223,15 +228,22 @@
                                         </div>
                                         <div class="col-lg-6">
                                             <span class="pf-title">Especialidad</span>
-                                            <div class="pf-field no-margin">
+                                            <div class="pf-field ">
                                                 <select id="input-especialidad" class="tokenize-demo" multiple>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="pf-title">Soft Skills</span>
+                                            <div class="pf-field no-margin">
+                                                <select id="input-soft-skills" class="tokenize-soft-skills" multiple>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <span class="pf-title">Último sueldo comprobable</span>
                                             <div class="pf-field">
-                                                <input type="number" min="0" required id="input-sueldo" placeholder="" />
+                                                <input type="number" min="0" required id="input-sueldo" placeholder="Puede que solicitemos algún comprobante en la entrevista" />
                                             </div>
                                         </div>
                                     </div>
