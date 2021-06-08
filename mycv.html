@@ -81,7 +81,7 @@
                         <a href="mycv.html" title="">Tu CV</a>
                     </li>
                     <li class="">
-                        <a href="#" title="">Conoce Extrategia</a>
+                        <a href="https://www.extrategia.com.mx/web/" title="">Conoce Extrategia</a>
                     </li>
 
                 </ul>
@@ -123,7 +123,7 @@
                             <a href="mycv.html" title="">Tu CV</a>
                         </li>
                         <li class="">
-                            <a href="#" title="">Conoce Extrategia</a>
+                            <a href="https://www.extrategia.com.mx/web/" title="">Conoce Extrategia</a>
                         </li>
                     </ul>
                 </nav><!-- Menus -->
@@ -181,7 +181,7 @@
                                                                                            data-target="#modalSkills"><i
                                         class="fas fa-plus"></i> Agregar Skills</a></div>
                                 <div id="seccion-skills" class="progress-sec"></div>
-                                <div class="border-title"><h3>Inglés</h3><a href="#modalEducacion"
+                                <div class="border-title"><h3>Inglés</h3><a href="#modalIngles"
                                                                             data-toggle="modal"
                                                                             data-target="#modalIngles"><i
                                         class="fas fa-plus"></i>Editar</a></div>
@@ -193,6 +193,54 @@
             </div>
         </div>
     </section>
+</div>
+
+<div class="modal fade" id="modalEditarEducacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="">
+                    <span class="pf-title">Título</span>
+                    <div class="pf-field">
+                        <input placeholder="" id="editar-titulo-educacion" type="text">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">De</span>
+                    <div class="pf-field">
+                        <input placeholder="06.11.2007" id="editar-inicio-educacion" type="date"
+                               class="form-control datepicker">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">A</span>
+                    <div class="pf-field">
+                        <input placeholder="06.11.2012" id="editar-fin-educacion" type="date"
+                               class="form-control datepicker">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">Instituto</span>
+                    <div class="pf-field">
+                        <input id="editar-instituto" type="text">
+                    </div>
+                </div>
+                <input hidden id="editar-key" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                <button type="button" onclick="editarEducacion()" class="btn btn-extrategia">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" id="modalEducacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -241,6 +289,64 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modalEditarExperiencia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >Editar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="">
+                    <span class="pf-title">Título</span>
+                    <div class="pf-field">
+                        <input placeholder="" id="editar-titulo-experiencia" type="text">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">De</span>
+                    <div class="pf-field">
+                        <input id="editar-inicio-experiencia" placeholder="06.11.2007" type="date" class="form-control datepicker">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">A</span>
+                    <div class="pf-field">
+                        <input id="editar-fin-experiencia" placeholder="06.11.2012" type="date" class="form-control datepicker">
+                    </div>
+                </div>
+                <div class="">
+                    <p class="remember-label">
+                        <input id="editar-presente" type="checkbox" id="fgfg"><label for="fgfg">Presente</label>
+                    </p>
+                </div>
+                <div class="">
+                    <span class="pf-title">Compañía</span>
+                    <div class="pf-field">
+                        <input type="text" id="editar-compania">
+                    </div>
+                </div>
+                <div class="">
+                    <span class="pf-title">Descripción</span>
+                    <div class="pf-field">
+                        <textarea id="editar-descripcion-experiencia"></textarea>
+                    </div>
+                </div>
+                <input hidden id="editar-experiencia-key" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                <button type="button" onclick="editarExperiencia()" class="btn btn-extrategia">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="modal fade" id="modalExperiencia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -330,12 +436,47 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="modalEditarSkill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >Editar Skill</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+            <div class="">
+                <span class="pf-title">Skill</span>
+                <div class="pf-field">
+                    <input placeholder="E.g Office, Photoshop, CorelDRAW" id="editar-skill" type="text">
+                </div>
+            </div>
+            <div class="">
+                <span class="pf-title">Porcentaje</span>
+                <div class="pf-field">
+                    <input placeholder="" id="editar-porcentaje-skill" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0">
+                </div>
+                <input hidden id="editar-skill-key" >
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                <button type="button" onclick="editarSkill()" class="btn btn-extrategia">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
 <div class="modal fade" id="modalIngles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" >Actalizar Inglés</h5>
+                <h5 class="modal-title" >Actualizar Inglés</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -397,6 +538,14 @@
         else {
             $("#input-presente").prop('checked', true);
             $("#fecha-fin-experiencia").prop('disabled', true);
+        }
+        if($("#editar-presente").prop('checked')){
+            $("#editar-presente").prop('checked', false);
+            $("#editar-fin-experiencia").prop('disabled', false);
+        }
+        else {
+            $("#editar-presente").prop('checked', true);
+            $("#editar-fin-experiencia").prop('disabled', true);
         }
     })
 </script>

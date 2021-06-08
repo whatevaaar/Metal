@@ -1,9 +1,14 @@
+const inputTituloEducacion = document.getElementById("input-titulo-educacion");
+const fechaInicioEducacion = document.getElementById("fecha-inicio-educacion");
+const fechaFinEducacion = document.getElementById("fecha-fin-educacion");
+const inputInstituto = document.getElementById("input-instituto");
+
 function agregarEducacion() {
     comprobarUsuarioEstaLogeado();
-    let titulo = document.getElementById("input-titulo-educacion").value;
-    let fechaInicio = document.getElementById("fecha-inicio-educacion").value;
-    let fechaFin = document.getElementById("fecha-fin-educacion").value;
-    let instituto = document.getElementById("input-instituto").value;
+    let titulo = inputTituloEducacion.value;
+    let fechaInicio = fechaInicioEducacion.value;
+    let fechaFin = fechaFinEducacion.value;
+    let instituto = inputInstituto.value;
     let ref= firebase.database().ref('candidatos/' + user.uid + '/educacion').push()
     ref.set({
         titulo: titulo,
@@ -29,10 +34,10 @@ function limpiarApartadoExperiencia() {
 }
 
 function limpiarApartadoEducacion() {
-    document.getElementById("input-titulo-educacion").value = "";
-    document.getElementById("fecha-inicio-educacion").value = "";
-    document.getElementById("fecha-fin-educacion").value = "";
-    document.getElementById("input-instituto").value = "";
+    inputInstituto.value = "";
+    inputTituloEducacion.value = "";
+    fechaFinEducacion.value = "";
+    fechaInicioEducacion.value = "";
 }
 
 function limpiarApartadoSkill() {
